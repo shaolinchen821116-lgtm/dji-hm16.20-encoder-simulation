@@ -1,0 +1,150 @@
+{
+  "source_directory": "D:\\002_Study\\EncoderSimulation\\dj_stream",
+  "source_files": 14,
+  "source_bytes": 1413426302,
+  "video_files": 8,
+  "tag": "v2026.11.15",
+  "files": [
+    {
+      "path": "dj_stream/action6/dji_mimo_20251129_110920_0_1764536541683_video.mp4",
+      "bytes": 161658216,
+      "sha256": "7a8053b85bc84d926ff7f90cbe81524429687a9c9844202a37518f6203dcf317",
+      "release_asset": "dj_stream_action6_01.zip"
+    },
+    {
+      "path": "dj_stream/Air3S/Air3s_D-logM.MP4",
+      "bytes": 156756544,
+      "sha256": "052b1ac06dc086df42e8a768c9eb236bf4a67a400a9b2a2cd53c1fe72e81fd9b",
+      "release_asset": "dj_stream_Air3S_01.zip"
+    },
+    {
+      "path": "dj_stream/Air3S/Air3s_normal.MP4",
+      "bytes": 74451639,
+      "sha256": "cc8ace8fc18280d09318d29f5b7dbcc1b7b44d986c2d83035d4421e0d927bcaa",
+      "release_asset": "dj_stream_Air3S_02.zip"
+    },
+    {
+      "path": "dj_stream/Air3S/Slow_24mm_4K120fps.MP4",
+      "bytes": 289931570,
+      "sha256": "7af1a2f285491b958314b209cd9f59720654fd7a8a4aea85cc9b9e21fd5d99d9",
+      "release_asset": "dj_stream_Air3S_03.zip"
+    },
+    {
+      "path": "dj_stream/Air3S/Slow_70mm_4K120fps.MP4",
+      "bytes": 295050094,
+      "sha256": "a2504fec6b4720ed7a4cbbbd52d65a0789ca085abb6c80a1f3e97d40f00c6a40",
+      "release_asset": "dj_stream_Air3S_04.zip"
+    },
+    {
+      "path": "dj_stream/Mavic3/MAVIC3_D-logM.MP4",
+      "bytes": 205883827,
+      "sha256": "f3c2f747efdbb7f611b4a5f04f4fa1c222a9b5a97a32fe6819eb2ba8f5241407",
+      "release_asset": "dj_stream_Mavic3_01.zip"
+    },
+    {
+      "path": "dj_stream/pocket_4/DJI_20260429163710_0019_D.MP4",
+      "bytes": 85730778,
+      "sha256": "2a70b2db29f7fb01e587c87cc6d922197dcc97361de1bf38b6ebdc7659580f4e",
+      "release_asset": "dj_stream_pocket_4_01.zip"
+    },
+    {
+      "path": "dj_stream/pocket_4/DJI_20260429163722_0020_D.MP4",
+      "bytes": 136945005,
+      "sha256": "4dce1822a4fedeb90e9d92954a5077c78e63e4c8716fa41a6b385388ffccb32a",
+      "release_asset": "dj_stream_pocket_4_02.zip"
+    },
+    {
+      "path": "dj_stream/pocket_4/DJI OSMO Pocket 4 D-Log to Rec.709 V1.0.cube",
+      "bytes": 1401638,
+      "sha256": "ca8bc7d3bf382512ed9501137c8b88d1829ae9b22a84965d7d2e1339f615de72",
+      "release_asset": "dj_stream_LUTs_and_CSV.zip"
+    },
+    {
+      "path": "dj_stream/pocket_4/DJI OSMO Pocket 4 D-Log to Rec.709 V2.0.cube",
+      "bytes": 1401638,
+      "sha256": "d029a958519a41f3fb98ce9ad11cc1f3fe9c7c8c48a91955136363bcc19847b9",
+      "release_asset": "dj_stream_LUTs_and_CSV.zip"
+    },
+    {
+      "path": "dj_stream/pocket_4/DJI OSMO Pocket 4 D-Log to Rec.709 vivid V1.0.cube",
+      "bytes": 1401638,
+      "sha256": "bb3c9b282c21e2974e67d73c9b62ef6c3bc9092d63b713c44ecc4e0de3eccfad",
+      "release_asset": "dj_stream_LUTs_and_CSV.zip"
+    },
+    {
+      "path": "dj_stream/pocket_4/DJI OSMO Pocket 4 D-Log to Rec.709 vivid V2.0.cube",
+      "bytes": 1401638,
+      "sha256": "95afff501afd0343c3c1a5f1cf7bc34c8d5ed5765474444b58e9db8a8b7e58fb",
+      "release_asset": "dj_stream_LUTs_and_CSV.zip"
+    },
+    {
+      "path": "dj_stream/pocket_4/DJI_OSMO_Pocket_4_D-Log_to_Rec.709_vivid_V1.0.cube",
+      "bytes": 1401638,
+      "sha256": "bb3c9b282c21e2974e67d73c9b62ef6c3bc9092d63b713c44ecc4e0de3eccfad",
+      "release_asset": "dj_stream_LUTs_and_CSV.zip"
+    },
+    {
+      "path": "dj_stream/pocket_4_vs_action6.csv",
+      "bytes": 10439,
+      "sha256": "b7c38ad69a82b47c6850b6e6d03cfbdd7ca34882d1e7bf73ebfe95dbc51a7695",
+      "release_asset": "dj_stream_LUTs_and_CSV.zip"
+    }
+  ],
+  "assets": [
+    {
+      "name": "dj_stream_action6_01.zip",
+      "bytes": 161658860,
+      "sha256": "b39937b21b099543968edc4b4a4232c4fd4fef9d0d8292479ebe01491667a1cc",
+      "url": "https://github.com/shaolinchen821116-lgtm/dji-hm16.20-encoder-simulation/releases/download/v2026.11.15/dj_stream_action6_01.zip"
+    },
+    {
+      "name": "dj_stream_Air3S_01.zip",
+      "bytes": 156757078,
+      "sha256": "3bfb5c80404bfe1119f2d2bb95107b3fe6568786432b6ca9a97b52d60b2563ab",
+      "url": "https://github.com/shaolinchen821116-lgtm/dji-hm16.20-encoder-simulation/releases/download/v2026.11.15/dj_stream_Air3S_01.zip"
+    },
+    {
+      "name": "dj_stream_Air3S_02.zip",
+      "bytes": 74452172,
+      "sha256": "e30fe3c9d227d9d2c38901ef06c5e215be2af8de0054d43b41b58b3b9b4bbc40",
+      "url": "https://github.com/shaolinchen821116-lgtm/dji-hm16.20-encoder-simulation/releases/download/v2026.11.15/dj_stream_Air3S_02.zip"
+    },
+    {
+      "name": "dj_stream_Air3S_03.zip",
+      "bytes": 289932122,
+      "sha256": "3676a4448fd69695ba7e732284d6148a3324b9f5a73ac3cd256ee5fd3e6e0cf9",
+      "url": "https://github.com/shaolinchen821116-lgtm/dji-hm16.20-encoder-simulation/releases/download/v2026.11.15/dj_stream_Air3S_03.zip"
+    },
+    {
+      "name": "dj_stream_Air3S_04.zip",
+      "bytes": 295050646,
+      "sha256": "20157c93c17dc02b8fd8dd806437d739c62405f0fc15d25cf4410e191ce42438",
+      "url": "https://github.com/shaolinchen821116-lgtm/dji-hm16.20-encoder-simulation/releases/download/v2026.11.15/dj_stream_Air3S_04.zip"
+    },
+    {
+      "name": "dj_stream_Mavic3_01.zip",
+      "bytes": 205884368,
+      "sha256": "3382fbf8b85e988f607e8d29e01d80a0fdcd5b07ee0bdf0668c8b6a525f0cdb7",
+      "url": "https://github.com/shaolinchen821116-lgtm/dji-hm16.20-encoder-simulation/releases/download/v2026.11.15/dj_stream_Mavic3_01.zip"
+    },
+    {
+      "name": "dj_stream_pocket_4_01.zip",
+      "bytes": 85731362,
+      "sha256": "9ed8a093a55e6937a4527f70abf974dd2e29a8534cabe2bef74bd1ba5bae8ba8",
+      "url": "https://github.com/shaolinchen821116-lgtm/dji-hm16.20-encoder-simulation/releases/download/v2026.11.15/dj_stream_pocket_4_01.zip"
+    },
+    {
+      "name": "dj_stream_pocket_4_02.zip",
+      "bytes": 136945590,
+      "sha256": "a7d63b2042bddc891f7dd0310a40e9cd4f934e061c079b32e0854fc898b4fb11",
+      "url": "https://github.com/shaolinchen821116-lgtm/dji-hm16.20-encoder-simulation/releases/download/v2026.11.15/dj_stream_pocket_4_02.zip"
+    },
+    {
+      "name": "dj_stream_LUTs_and_CSV.zip",
+      "bytes": 2538782,
+      "sha256": "1354578e502dc40df562ec52b4f5f8e71263c953ee870f8948a4180f6dfecbf1",
+      "url": "https://github.com/shaolinchen821116-lgtm/dji-hm16.20-encoder-simulation/releases/download/v2026.11.15/dj_stream_LUTs_and_CSV.zip"
+    }
+  ],
+  "all_source_and_archive_hashes_verified": true
+}

@@ -1,0 +1,11 @@
+__pycache__/
+output/*.yuv
+source_analysis/*.265
+bin/
+HM-16.20/bin/
+HM-16.20/build/vc2015/x64/
+*.obj
+*.pdb
+*.ipch
+*.sdf
+*.VC.db

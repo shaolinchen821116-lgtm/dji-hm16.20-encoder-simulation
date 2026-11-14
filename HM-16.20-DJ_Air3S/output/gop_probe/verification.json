@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "camera": "Air3S",
+  "frames": 65,
+  "width": 64,
+  "height": 64,
+  "i_interval": 60,
+  "i_decode_indices": [
+    0,
+    60
+  ],
+  "idr_nal_type": 20,
+  "md5_sei_ok_frames": 65,
+  "single_active_l0_for_all_p": true,
+  "tiles": 0
+}

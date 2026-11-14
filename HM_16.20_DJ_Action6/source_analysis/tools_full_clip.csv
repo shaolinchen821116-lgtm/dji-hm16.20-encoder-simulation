@@ -1,0 +1,49 @@
+﻿Group,Metric,Value,Interpretation
+Scope,Pictures decoded,716,Full source clip
+Protocol,Codec profile,Main 10,
+Protocol,Bit depth,10,Source streams; tests use 8-bit
+Sequence,Display resolution,3840 x 2160,
+Sequence,Coded resolution,3840 x 2176,
+Sequence,Frame rate (fps),29.97002997002997,"Presentation rate, not filename/capture mode"
+Sequence,I interval (pictures),30,Observed I decode-index intervals
+Sequence,B pictures observed,0,Actual count
+SPS,CTU size,32,Luma samples
+SPS,Minimum CU size,8,Signaled capability
+SPS,Maximum TU size,32,Luma samples
+SPS,Minimum TU size,4,Signaled capability
+SPS,Intra transform hierarchy,0,Syntax value; HM config adds 1
+SPS,Inter transform hierarchy,0,Syntax value; mandatory splits also possible
+SPS,AMP,0,"1=enabled, 0=disabled"
+SPS,TMVP,1,"1=enabled, 0=disabled"
+SPS,SAO,1,"1=enabled, 0=disabled"
+SPS,Strong intra smoothing,0,"1=enabled, 0=disabled"
+SPS,PCM,0,"1=enabled, 0=disabled"
+SPS,Scaling lists,0,"1=enabled, 0=disabled"
+PPS,Transform skip,0,"1=enabled/present, 0=disabled/absent"
+PPS,Sign data hiding,0,"1=enabled/present, 0=disabled/absent"
+PPS,Weighted prediction P,0,"1=enabled/present, 0=disabled/absent"
+PPS,Weighted prediction B,0,"1=enabled/present, 0=disabled/absent"
+PPS,WPP,0,"1=enabled/present, 0=disabled/absent"
+PPS,CABAC init present,1,"1=enabled/present, 0=disabled/absent"
+PPS,QP delta coding,1,"1=enabled/present, 0=disabled/absent"
+PPS,QG size,32,Luma samples
+PPS,Tile columns,4,Actual grid
+PPS,Tile rows,1,Actual grid
+PPS,Deblocking control present,1,"1=present, 0=inferred defaults"
+PPS,Deblocking override enabled,1,Header flag
+Slice,Deblocking beta offset /2,0,Effective slice value
+Slice,Deblocking tc offset /2,0,Effective slice value
+Slice,P merge candidate limit,3,I slices do not signal this field
+Slice,Maximum P L0 references,1,"Active list, not DPB size"
+Observed,Intra CU sizes,"8,16,32","Observed set, not hardware proof"
+Observed,Inter CU sizes,"8,16,32",Includes Skip
+Observed,Intra PU widths,"8,16,32",Width 4 is Intra4 prediction
+Observed,Inter luma TU sizes,"8,16,32",Only CUs with a transform tree
+Observed,Intra luma TU sizes,"8,16,32",Not chroma TU sizes
+Observed,PU partition codes,"0,1,2",0=square; 1/2=rect; 3=NxN; 4..7=AMP
+Observed,Chroma intra DM only,1,1=only coded DM=36 observed
+Observed,CU QP minimum,10,"Source QP, not test QP"
+Observed,CU QP maximum,38,Variation does not prove AQ algorithm
+Observed,Inter8 CU count,6518132,"Actual decoded CU8, includes Skip"
+Observed,Merge share of inter PUs,0.41217913493552494,"Count-based, source-content dependent"
+Observed,AMP share of inter PUs,0.0,"Count-based, source-content dependent"

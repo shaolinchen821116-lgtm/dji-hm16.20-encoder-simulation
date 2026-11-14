@@ -1,0 +1,200 @@
+﻿Module,Metric,Value,Unit,Source,Confidence
+Summary,── Protocol level / 协议级 ──,,,,Section
+Summary,File,DJI_20260429163710_0019_D.MP4,,ffprobe,Measured
+Summary,Container,QuickTime / MOV,,ffprobe,Measured
+Summary,Codec,H.265 / HEVC (High Efficiency Video Coding),,ffprobe,Measured
+Summary,Profile,Main 10,,ffprobe,Measured
+Summary,Level,150,,ffprobe,Measured
+Summary,Pixel format,yuv420p10le,,ffprobe,Measured
+Summary,Bit depth,10,bits,ffprobe,Measured
+Summary,── Sequence level / 序列级 ──,,,,Section
+Summary,Resolution,3840 x 2160,pixels,ffprobe,Measured
+Summary,Frame rate,59.9401,fps,ffprobe,Measured
+Summary,Duration,5.482667,seconds,ffprobe,Measured
+Summary,Bit rate,125.094,Mbps,ffprobe,Measured
+Summary,Analysis mode,First 10 frames,,ffprobe,Measured
+Summary,Frames analyzed,10,frames,ffprobe,Measured
+Summary,Observed frame types,"I, P",,ffprobe,Measured
+Summary,── SPS level / SPS级 ──,,,,Section
+Summary,LCU/CTU size,32x32,luma samples,HEVC syntax,Signaled in bitstream
+Summary,Maximum TU size,16x16,luma samples,HEVC syntax,Signaled in bitstream
+Summary,SPS max transform hierarchy depth (Intra),0,levels,HEVC syntax,Signaled in bitstream
+Summary,SPS max transform hierarchy depth (Inter),2,levels,HEVC syntax,Signaled in bitstream
+Summary,TMVP signaled,Yes,,HEVC syntax,Signaled in bitstream
+Summary,AMP signaled,No,,HEVC syntax,Signaled in bitstream
+Summary,── PPS level / PPS级 ──,,,,Section
+Summary,Tiles signaled,No,,HEVC syntax,Signaled in bitstream
+Summary,WPP signaled,No,,HEVC syntax,Signaled in bitstream
+Summary,Transform Skip signaled,No,,HEVC syntax,Signaled in bitstream
+Summary,QP Delta coding signaled,Yes,,HEVC syntax,Signaled in bitstream
+Summary,QG/QPG size,16x16,luma samples,HEVC syntax,Signaled in bitstream
+Summary,── Slice level / Slice级 ──,,,,Section
+Summary,Maximum Merge candidates signaled,5,candidates,Slice header,Signaled in bitstream
+Summary,── LCU/CTU/MB level / 块级 ──,,,,Section
+Summary,Observed Intra prediction sizes,"8, 16",luma samples,HM instrumentation,Observed in analyzed frames
+Summary,Observed Inter CU sizes,16,luma samples,HM instrumentation,Observed in analyzed frames
+Summary,Intra4 observed,No,,HM instrumentation,Observed in analyzed frames
+Summary,Intra8 observed,Yes,,HM instrumentation,Observed in analyzed frames
+Summary,Intra16 observed,Yes,,HM instrumentation,Observed in analyzed frames
+Summary,Intra32 observed,No,,HM instrumentation,Observed in analyzed frames
+Summary,Intra64 observed,No,,HM instrumentation,Observed in analyzed frames
+Summary,Inter4 observed,No,,HM instrumentation,Observed in analyzed frames
+Summary,Inter8 observed,No,,HM instrumentation,Observed in analyzed frames
+Summary,Inter16 observed,Yes,,HM instrumentation,Observed in analyzed frames
+Summary,Inter32 observed,No,,HM instrumentation,Observed in analyzed frames
+Summary,Inter64 observed,No,,HM instrumentation,Observed in analyzed frames
+Summary,AMVP observed,Yes,,HM instrumentation,Observed in analyzed frames
+Summary,TMVP candidate observed,Yes,,HM instrumentation,Observed in analyzed frames
+Summary,Transform Skip observed,No,,HM instrumentation,Observed in analyzed frames
+Summary,PU types observed,"2Nx2N, 2NxN, Nx2N",,HM instrumentation,Observed in analyzed frames
+Summary,Maximum Merge candidate index observed,4,zero-based index,HM instrumentation,Observed in analyzed frames
+Summary,Merge candidate count lower bound,5,candidates,HM instrumentation,Observed in analyzed frames
+Summary,CU QP variation observed,Yes,,HM instrumentation,AQ capability remains indeterminate
+Summary,AQ support,Indeterminate; CU-level QP variation observed,,Bitstream inference,Encoder algorithm cannot be proven from one stream
+Summary,Observed CU QP range,"[13, 29]",QP,HM instrumentation,Observed in analyzed frames
+Summary,Maximum MV integer envelope,"[-33, 33] x [-20, 20]",integer pixels,HM instrumentation (1/4-pel source),Observed in analyzed frames
+Summary,Maximum observed RQT depth,1,levels,HM instrumentation,Observed in analyzed frames
+Summary,RQT depth 0 observed,Yes,,HM instrumentation,Observed in analyzed frames
+Summary,RQT depth 1 observed,Yes,,HM instrumentation,Observed in analyzed frames
+GOP / Frames,I frames,1,frames,ffprobe,Measured
+GOP / Frames,I share,10.0,%,ffprobe,Measured
+GOP / Frames,P frames,9,frames,ffprobe,Measured
+GOP / Frames,P share,90.0,%,ffprobe,Measured
+GOP / Frames,B frames,0,frames,ffprobe,Measured
+GOP / Frames,B share,0.0,%,ffprobe,Measured
+GOP / Frames,Key frames,1,frames,ffprobe,Measured
+GOP / Frames,Typical key-frame interval,N/A,frames,ffprobe,Measured
+GOP / Frames,Mean frame size,214781.6,bytes,ffprobe,Measured
+GOP / Frames,Max frame size,515395,bytes,ffprobe,Measured
+Headers / Tools,SAO enabled,1,,HEVC syntax,Signaled in bitstream
+Headers / Tools,Tiles enabled,0,,HEVC syntax,Signaled in bitstream
+Headers / Tools,WPP enabled,0,,HEVC syntax,Signaled in bitstream
+Headers / Tools,Deblocking control present,0,,HEVC syntax,Signaled in bitstream
+Headers / Tools,AMP enabled,0,,HEVC syntax,Signaled in bitstream
+Headers / Tools,TMVP enabled,1,,HEVC syntax,Signaled in bitstream
+Headers / Tools,Strong intra smoothing,0,,HEVC syntax,Signaled in bitstream
+Headers / Tools,PCM enabled,0,,HEVC syntax,Signaled in bitstream
+Headers / Tools,Transform skip enabled,0,,HEVC syntax,Signaled in bitstream
+Headers / Tools,Sign-data hiding enabled,1,,HEVC syntax,Signaled in bitstream
+Headers / Tools,Max inter transform depth,2,,HEVC syntax,Signaled in bitstream
+Headers / Tools,Max intra transform depth,0,,HEVC syntax,Signaled in bitstream
+Headers / Tools,Min CU log2 minus 3,0,,HEVC syntax,Signaled in bitstream
+Headers / Tools,CU size range log2,2,,HEVC syntax,Signaled in bitstream
+Headers / Tools,Min TU log2 minus 2,0,,HEVC syntax,Signaled in bitstream
+Headers / Tools,TU size range log2,2,,HEVC syntax,Signaled in bitstream
+Headers / Tools,Weighted prediction P,0,,HEVC syntax,Signaled in bitstream
+Headers / Tools,Weighted biprediction B,0,,HEVC syntax,Signaled in bitstream
+Headers / Tools,Reference list modification,0,,HEVC syntax,Signaled in bitstream
+Headers / Tools,CU QP delta enabled,1,,HEVC syntax,Signaled in bitstream
+Headers / Tools,QG depth,1,,HEVC syntax,Signaled in bitstream
+Headers / Tools,Five minus max merge candidates,0,,HEVC syntax,Signaled in bitstream
+Headers / Tools,Video Parameter sets observed,2,,HEVC syntax,Measured
+Headers / Tools,Sequence Parameter sets observed,2,,HEVC syntax,Measured
+Headers / Tools,Picture Parameter sets observed,2,,HEVC syntax,Measured
+CU / PU / TU,Total CU,339861,blocks,HM instrumentation,Decoded
+CU / PU / TU,Total PU,340550,blocks,HM instrumentation,Decoded
+CU / PU / TU,Total TU,517849,blocks,HM instrumentation,Decoded
+Prediction Tools,Skip CU share,11.126,%,HM instrumentation,Decoded
+Prediction Tools,Merge inter-PU share,81.59,%,HM instrumentation,Decoded
+Prediction Tools,AMVP inter-PU share,18.41,%,HM instrumentation,Decoded
+Prediction Tools,AMP inter-PU share,0.0,%,HM instrumentation,Decoded
+Prediction Tools,TMVP merge-PU share,3.064,%,HM instrumentation,Decoded
+Intra / MPM,Intra PU,48648,blocks,HM instrumentation,Decoded
+Intra / MPM,MPM hit share,86.184,%,HM instrumentation,Decoded
+CU / PU / TU,Luma CBF TU share,79.204,%,HM instrumentation,Decoded
+CU / PU / TU,Chroma Cb CBF TU share,27.332,%,HM instrumentation,Decoded
+CU / PU / TU,Chroma Cr CBF TU share,17.985,%,HM instrumentation,Decoded
+CU / PU / TU,Transform-skip TU share,0.0,%,HM instrumentation,Decoded
+MV / MVD,Mean MV magnitude,0.626,pixels,HM instrumentation,Decoded
+MV / MVD,Maximum MV magnitude,32.5,pixels,HM instrumentation,Decoded
+MV / MVD,Mean MVD magnitude,0.196,pixels,HM instrumentation,Decoded
+MV / MVD,Maximum MVD magnitude,33.16,pixels,HM instrumentation,Decoded
+CU / PU / TU,CU size: 16x16,318713,blocks,HM instrumentation,Decoded
+CU / PU / TU,CU size: 8x8,21148,blocks,HM instrumentation,Decoded
+CU / PU / TU,CU depth: 1,318713,blocks,HM instrumentation,Decoded
+CU / PU / TU,CU depth: 2,21148,blocks,HM instrumentation,Decoded
+CU / PU / TU,PU partition: 2Nx2N,339172,blocks,HM instrumentation,Decoded
+CU / PU / TU,PU partition: 2NxN,636,blocks,HM instrumentation,Decoded
+CU / PU / TU,PU partition: Nx2N,742,blocks,HM instrumentation,Decoded
+CU / PU / TU,TU size: 16x16,496701,blocks,HM instrumentation,Decoded
+CU / PU / TU,TU size: 8x8,21148,blocks,HM instrumentation,Decoded
+CU / PU / TU,TU depth: 0,221897,blocks,HM instrumentation,Decoded
+CU / PU / TU,TU depth: 1,295952,blocks,HM instrumentation,Decoded
+QP,Block QP: 13,150,CUs,HM instrumentation,Decoded
+QP,Block QP: 14,4141,CUs,HM instrumentation,Decoded
+QP,Block QP: 15,23519,CUs,HM instrumentation,Decoded
+QP,Block QP: 16,30558,CUs,HM instrumentation,Decoded
+QP,Block QP: 17,33782,CUs,HM instrumentation,Decoded
+QP,Block QP: 18,29530,CUs,HM instrumentation,Decoded
+QP,Block QP: 19,30227,CUs,HM instrumentation,Decoded
+QP,Block QP: 20,40449,CUs,HM instrumentation,Decoded
+QP,Block QP: 21,40375,CUs,HM instrumentation,Decoded
+QP,Block QP: 22,26448,CUs,HM instrumentation,Decoded
+QP,Block QP: 23,61829,CUs,HM instrumentation,Decoded
+QP,Block QP: 24,7160,CUs,HM instrumentation,Decoded
+QP,Block QP: 25,6352,CUs,HM instrumentation,Decoded
+QP,Block QP: 26,4105,CUs,HM instrumentation,Decoded
+QP,Block QP: 27,1106,CUs,HM instrumentation,Decoded
+QP,Block QP: 28,122,CUs,HM instrumentation,Decoded
+QP,Block QP: 29,8,CUs,HM instrumentation,Decoded
+Intra / MPM,Luma intra mode: 0,21695,PUs,HM instrumentation,Decoded
+Intra / MPM,Luma intra mode: 1,14159,PUs,HM instrumentation,Decoded
+Intra / MPM,Luma intra mode: 10,763,PUs,HM instrumentation,Decoded
+Intra / MPM,Luma intra mode: 11,608,PUs,HM instrumentation,Decoded
+Intra / MPM,Luma intra mode: 12,1019,PUs,HM instrumentation,Decoded
+Intra / MPM,Luma intra mode: 13,742,PUs,HM instrumentation,Decoded
+Intra / MPM,Luma intra mode: 14,505,PUs,HM instrumentation,Decoded
+Intra / MPM,Luma intra mode: 15,258,PUs,HM instrumentation,Decoded
+Intra / MPM,Luma intra mode: 16,232,PUs,HM instrumentation,Decoded
+Intra / MPM,Luma intra mode: 17,262,PUs,HM instrumentation,Decoded
+Intra / MPM,Luma intra mode: 18,459,PUs,HM instrumentation,Decoded
+Intra / MPM,Luma intra mode: 19,251,PUs,HM instrumentation,Decoded
+Intra / MPM,Luma intra mode: 2,47,PUs,HM instrumentation,Decoded
+Intra / MPM,Luma intra mode: 20,312,PUs,HM instrumentation,Decoded
+Intra / MPM,Luma intra mode: 21,453,PUs,HM instrumentation,Decoded
+Intra / MPM,Luma intra mode: 22,453,PUs,HM instrumentation,Decoded
+Intra / MPM,Luma intra mode: 23,314,PUs,HM instrumentation,Decoded
+Intra / MPM,Luma intra mode: 24,300,PUs,HM instrumentation,Decoded
+Intra / MPM,Luma intra mode: 25,197,PUs,HM instrumentation,Decoded
+Intra / MPM,Luma intra mode: 26,560,PUs,HM instrumentation,Decoded
+Intra / MPM,Luma intra mode: 27,1158,PUs,HM instrumentation,Decoded
+Intra / MPM,Luma intra mode: 28,886,PUs,HM instrumentation,Decoded
+Intra / MPM,Luma intra mode: 29,386,PUs,HM instrumentation,Decoded
+Intra / MPM,Luma intra mode: 3,24,PUs,HM instrumentation,Decoded
+Intra / MPM,Luma intra mode: 30,225,PUs,HM instrumentation,Decoded
+Intra / MPM,Luma intra mode: 31,107,PUs,HM instrumentation,Decoded
+Intra / MPM,Luma intra mode: 32,86,PUs,HM instrumentation,Decoded
+Intra / MPM,Luma intra mode: 33,53,PUs,HM instrumentation,Decoded
+Intra / MPM,Luma intra mode: 34,115,PUs,HM instrumentation,Decoded
+Intra / MPM,Luma intra mode: 4,144,PUs,HM instrumentation,Decoded
+Intra / MPM,Luma intra mode: 5,119,PUs,HM instrumentation,Decoded
+Intra / MPM,Luma intra mode: 6,165,PUs,HM instrumentation,Decoded
+Intra / MPM,Luma intra mode: 7,384,PUs,HM instrumentation,Decoded
+Intra / MPM,Luma intra mode: 8,583,PUs,HM instrumentation,Decoded
+Intra / MPM,Luma intra mode: 9,624,PUs,HM instrumentation,Decoded
+Intra / MPM,Chroma intra mode: 36,48648,PUs,HM instrumentation,Decoded
+MV / MVD,"MV magnitude pixels: [0,1)",251191,vectors,HM instrumentation,Decoded
+MV / MVD,"MV magnitude pixels: [1,2)",20352,vectors,HM instrumentation,Decoded
+MV / MVD,"MV magnitude pixels: [16,32)",123,vectors,HM instrumentation,Decoded
+MV / MVD,"MV magnitude pixels: [2,4)",12955,vectors,HM instrumentation,Decoded
+MV / MVD,"MV magnitude pixels: [32,64)",1,vectors,HM instrumentation,Decoded
+MV / MVD,"MV magnitude pixels: [4,8)",6071,vectors,HM instrumentation,Decoded
+MV / MVD,"MV magnitude pixels: [8,16)",1209,vectors,HM instrumentation,Decoded
+MV / MVD,"MVD magnitude pixels: [0,1)",277883,vectors,HM instrumentation,Decoded
+MV / MVD,"MVD magnitude pixels: [1,2)",6509,vectors,HM instrumentation,Decoded
+MV / MVD,"MVD magnitude pixels: [16,32)",47,vectors,HM instrumentation,Decoded
+MV / MVD,"MVD magnitude pixels: [2,4)",4322,vectors,HM instrumentation,Decoded
+MV / MVD,"MVD magnitude pixels: [32,64)",1,vectors,HM instrumentation,Decoded
+MV / MVD,"MVD magnitude pixels: [4,8)",2627,vectors,HM instrumentation,Decoded
+MV / MVD,"MVD magnitude pixels: [8,16)",513,vectors,HM instrumentation,Decoded
+HM Decoder,HM backend,Active,,HM-16.20,Decoded
+HM Decoder,Decoder build,16.20 / Windows / GCC 8.1.0,,HM,Binary-reported
+HM Decoder,Pictures decoded,10,frames,HM,Decoded
+QP,HM minimum slice QP,18,QP,HM,Decoded
+QP,HM mean slice QP,20,QP,HM,Decoded
+QP,HM maximum slice QP,23,QP,HM,Decoded
+GOP / Frames,Maximum temporal layer ID,0,,HM,Decoded
+GOP / Frames,Mean L0 reference count,0.9,references,HM,Decoded
+GOP / Frames,Maximum L0 reference count,1,references,HM,Decoded
+GOP / Frames,Mean L1 reference count,0,references,HM,Decoded
+GOP / Frames,Maximum L1 reference count,0,references,HM,Decoded

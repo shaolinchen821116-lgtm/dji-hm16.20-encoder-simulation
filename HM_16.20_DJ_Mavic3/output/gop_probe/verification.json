@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "camera": "Mavic3",
+  "frames": 65,
+  "width": 64,
+  "height": 64,
+  "i_interval": 30,
+  "i_decode_indices": [
+    0,
+    30,
+    60
+  ],
+  "idr_nal_type": 19,
+  "md5_sei_ok_frames": 65,
+  "single_active_l0_for_all_p": true,
+  "tiles": 0
+}

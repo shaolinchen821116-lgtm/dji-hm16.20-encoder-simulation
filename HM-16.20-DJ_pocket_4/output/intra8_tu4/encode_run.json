@@ -1,0 +1,21 @@
+{
+  "command": [
+    "D:\\002_Study\\EncoderSimulation\\HM-16.20-DJ_pocket_4\\bin\\TAppEncoder_pocket4.exe",
+    "-c",
+    "D:\\002_Study\\EncoderSimulation\\HM-16.20-DJ_pocket_4\\cfg\\pocket4_main8_intra8_tu4_qp27.cfg",
+    "-i",
+    "D:\\yuv_data\\yuv_hevc\\ClassB\\ParkScene_1920x1080_24.yuv",
+    "-b",
+    "D:\\002_Study\\EncoderSimulation\\HM-16.20-DJ_pocket_4\\output\\intra8_tu4\\ParkScene_1920x1080_24_pocket4_qp27_20f.265",
+    "-o",
+    "D:\\002_Study\\EncoderSimulation\\HM-16.20-DJ_pocket_4\\output\\intra8_tu4\\ParkScene_1920x1080_24_pocket4_qp27_20f_recon8.yuv"
+  ],
+  "elapsed_seconds": 102.15434290000121,
+  "exit_code": 0,
+  "input": "D:\\yuv_data\\yuv_hevc\\ClassB\\ParkScene_1920x1080_24.yuv",
+  "input_bitdepth": 8,
+  "internal_bitdepth": 8,
+  "frames": 20,
+  "qp": 27,
+  "config_sha256": "d299e9f2fc6ef53a1a9e9f95619edbef3892878a1dcafbde8bd63fe361fd3359"
+}

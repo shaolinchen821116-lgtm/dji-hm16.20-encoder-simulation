@@ -1,0 +1,271 @@
+{
+  "passed": true,
+  "camera": "Action6",
+  "frames": 20,
+  "qp": 27,
+  "source_profile": "Main10",
+  "test_profile": "Main / 8-bit",
+  "width": 1920,
+  "height": 1080,
+  "coded_height": 1088,
+  "fps": 24,
+  "types": {
+    "I": 1,
+    "P": 19
+  },
+  "bitstream_bytes": 566305,
+  "bitrate_kbps": 5436.528,
+  "mean_psnr_db": {
+    "Y": 37.51266,
+    "U": 39.78885,
+    "V": 41.03120500000001
+  },
+  "encoder_hm_ffmpeg_exact_match": true,
+  "md5_sei_ok_frames": 20,
+  "reconstruction_sha256": {
+    "encoder_recon8.yuv": "9aa865feab15fa118e7e75da0fde1fd7d01479e7f354dde43b6a9a8740eb7b97",
+    "hm_decoded8.yuv": "9aa865feab15fa118e7e75da0fde1fd7d01479e7f354dde43b6a9a8740eb7b97",
+    "ffmpeg_decoded8.yuv": "9aa865feab15fa118e7e75da0fde1fd7d01479e7f354dde43b6a9a8740eb7b97"
+  },
+  "expected_fields": {
+    "coded_width": 1920,
+    "coded_height": 1088,
+    "crop_bottom": 8,
+    "bitdepth": 8,
+    "ctu_size": 32,
+    "min_cu": 8,
+    "max_cu": 32,
+    "min_tu": 4,
+    "max_tu": 32,
+    "syntax_intra_transform_depth": 0,
+    "syntax_inter_transform_depth": 0,
+    "amp": 0,
+    "tmvp_sps": 1,
+    "ts_allowed": 0,
+    "sao": 1,
+    "strong_intra_smoothing": 0,
+    "pcm": 0,
+    "tiles": 0,
+    "tile_cols": 1,
+    "tile_rows": 1,
+    "wpp": 0,
+    "sign_hiding": 0,
+    "weighted_pred_p": 0,
+    "weighted_pred_b": 0,
+    "dqp_enabled": 1,
+    "qg_size": 32,
+    "slice_qp": 27,
+    "cabac_init_present": 1,
+    "beta_offset": 0,
+    "tc_offset": 0
+  },
+  "observed_histograms": {
+    "bottom_visible_cu_mode": {
+      "1": 259,
+      "0": 2794
+    },
+    "bottom_visible_cu_partition": {
+      "0": 3007,
+      "1": 21,
+      "2": 25
+    },
+    "bottom_visible_cu_size": {
+      "8": 2128,
+      "16": 514,
+      "32": 411
+    },
+    "bottom_visible_intra_cu_size": {
+      "8": 191,
+      "16": 58,
+      "32": 10
+    },
+    "chroma_component_tu": {
+      "4": 142004,
+      "8": 30560,
+      "16": 4860
+    },
+    "cu_depth": {
+      "0": 18887,
+      "1": 51125,
+      "2": 146108
+    },
+    "cu_partition": {
+      "0": 211609,
+      "1": 1499,
+      "2": 3012
+    },
+    "cu_qp": {
+      "27": 216120
+    },
+    "cu_size": {
+      "8": 146108,
+      "16": 51125,
+      "32": 18887
+    },
+    "intra_chroma_mode": {
+      "36": 20511
+    },
+    "intra_cu16_luma_tu_size": {
+      "16": 3172
+    },
+    "intra_cu8_cbf_luma_tu_size": {
+      "8": 14962
+    },
+    "intra_cu8_luma_tu_depth": {
+      "0": 16531
+    },
+    "intra_cu8_luma_tu_leaves_per_cu": {
+      "1": 16531
+    },
+    "intra_cu8_luma_tu_size": {
+      "8": 16531
+    },
+    "intra_cu8_pu_partition": {
+      "0": 16531
+    },
+    "intra_cu_size": {
+      "8": 16531,
+      "16": 3172,
+      "32": 808
+    },
+    "intra_cu_tu_leaf_counts": {
+      "8193": 16531,
+      "16385": 3172,
+      "32769": 808
+    },
+    "intra_cu_tu_pairs": {
+      "8200": 16531,
+      "16400": 3172,
+      "32800": 808
+    },
+    "intra_luma_mode": {
+      "0": 5572,
+      "1": 3750,
+      "2": 228,
+      "3": 118,
+      "4": 154,
+      "5": 174,
+      "6": 152,
+      "7": 194,
+      "8": 230,
+      "9": 433,
+      "10": 656,
+      "11": 309,
+      "12": 202,
+      "13": 185,
+      "14": 164,
+      "15": 217,
+      "16": 194,
+      "17": 199,
+      "18": 491,
+      "19": 215,
+      "20": 267,
+      "21": 310,
+      "22": 345,
+      "23": 434,
+      "24": 416,
+      "25": 528,
+      "26": 2329,
+      "27": 398,
+      "28": 336,
+      "29": 270,
+      "30": 243,
+      "31": 202,
+      "32": 173,
+      "33": 153,
+      "34": 270
+    },
+    "intra_luma_tu_size": {
+      "8": 16531,
+      "16": 3172,
+      "32": 808
+    },
+    "intra_pu_dimensions": {
+      "8200": 16531,
+      "16400": 3172,
+      "32800": 808
+    },
+    "intra_pu_width": {
+      "8": 16531,
+      "16": 3172,
+      "32": 808
+    },
+    "luma_component_tu": {
+      "8": 71002,
+      "16": 15280,
+      "32": 2430
+    },
+    "luma_tu_size": {
+      "8": 71002,
+      "16": 15280,
+      "32": 2430
+    },
+    "pu_partition": {
+      "0": 211609,
+      "1": 2998,
+      "2": 6024
+    },
+    "rqt_depth": {
+      "0": 80124,
+      "1": 8588
+    },
+    "bottom_visible_inter_cu_size": {
+      "8": 1937,
+      "16": 456,
+      "32": 401
+    },
+    "inter_cu_size": {
+      "8": 129577,
+      "16": 47953,
+      "32": 18079
+    },
+    "inter_cu_tu_leaf_counts": {
+      "8193": 47147,
+      "16385": 10844,
+      "16388": 1831,
+      "32769": 1622,
+      "32772": 316
+    },
+    "inter_cu_tu_pairs": {
+      "8200": 47147,
+      "16392": 7324,
+      "16400": 10844,
+      "32784": 1264,
+      "32800": 1622
+    },
+    "inter_luma_tu_size": {
+      "8": 54471,
+      "16": 12108,
+      "32": 1622
+    },
+    "inter_pu8x8_cu_size": {
+      "8": 129577
+    },
+    "inter_pu_dimensions": {
+      "8200": 129577,
+      "8208": 4478,
+      "16392": 2332,
+      "16400": 44548,
+      "16416": 1546,
+      "32784": 666,
+      "32800": 16973
+    },
+    "merge_index": {
+      "0": 105914,
+      "1": 42722,
+      "2": 20608
+    }
+  },
+  "encoder_sha256": "167dd89fa2f95780077451b2fe2c582e84591d8f53782283f9c7b0b3956cd047",
+  "decoder_sha256": "48c90042495e613db9f7ad55e663a143fb9c33630620a83bea58d71cae662b59",
+  "bitstream_sha256": "77565476f4f856ce8a4fd9a6ec75fea38da9f1648607ff9f0fe85be10a97f686",
+  "config_sha256": "34b04dcea8997b09c3613b5fed1a79fdd39ae137724406e0f4c0586bd7e1fb70",
+  "encode_seconds": 102.41711470000155,
+  "coverage": {
+    "intra4": false,
+    "amp": false,
+    "inter8": true,
+    "intra32": true,
+    "inter32": true
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "command": [
+    "D:\\002_Study\\EncoderSimulation\\HM_16.20_DJ_Mavic3\\bin\\TAppEncoder_camera.exe",
+    "-c",
+    "D:\\002_Study\\EncoderSimulation\\HM_16.20_DJ_Mavic3\\cfg\\camera_main8_qp27.cfg",
+    "-i",
+    "D:\\yuv_data\\yuv_hevc\\ClassB\\ParkScene_1920x1080_24.yuv",
+    "-b",
+    "D:\\002_Study\\EncoderSimulation\\HM_16.20_DJ_Mavic3\\output\\ParkScene_1920x1080_24_Mavic3_qp27_20f.265",
+    "-o",
+    "D:\\002_Study\\EncoderSimulation\\HM_16.20_DJ_Mavic3\\output\\encoder_recon8.yuv"
+  ],
+  "elapsed_seconds": 148.69895720000204,
+  "input": "D:\\yuv_data\\yuv_hevc\\ClassB\\ParkScene_1920x1080_24.yuv",
+  "frames": 20,
+  "qp": 27,
+  "input_bitdepth": 8,
+  "internal_bitdepth": 8
+}

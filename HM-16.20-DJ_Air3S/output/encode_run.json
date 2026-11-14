@@ -1,0 +1,19 @@
+{
+  "command": [
+    "D:\\002_Study\\EncoderSimulation\\HM-16.20-DJ_Air3S\\bin\\TAppEncoder_camera.exe",
+    "-c",
+    "D:\\002_Study\\EncoderSimulation\\HM-16.20-DJ_Air3S\\cfg\\camera_main8_qp27.cfg",
+    "-i",
+    "D:\\yuv_data\\yuv_hevc\\ClassB\\ParkScene_1920x1080_24.yuv",
+    "-b",
+    "D:\\002_Study\\EncoderSimulation\\HM-16.20-DJ_Air3S\\output\\ParkScene_1920x1080_24_Air3S_qp27_20f.265",
+    "-o",
+    "D:\\002_Study\\EncoderSimulation\\HM-16.20-DJ_Air3S\\output\\encoder_recon8.yuv"
+  ],
+  "elapsed_seconds": 136.44382599999517,
+  "input": "D:\\yuv_data\\yuv_hevc\\ClassB\\ParkScene_1920x1080_24.yuv",
+  "frames": 20,
+  "qp": 27,
+  "input_bitdepth": 8,
+  "internal_bitdepth": 8
+}

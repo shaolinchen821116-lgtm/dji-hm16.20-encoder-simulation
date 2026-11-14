@@ -1,0 +1,42 @@
+{
+  "folder": "HM_16.20_DJ_Mavic3",
+  "ctu": 64,
+  "max_tu": 32,
+  "min_inter_tu": 4,
+  "max_inter_tu": 16,
+  "intra_sizes": [
+    8,
+    16,
+    32
+  ],
+  "inter_sizes": [
+    8,
+    16,
+    32
+  ],
+  "intra_nxn": true,
+  "amp": 1,
+  "tmvp": 0,
+  "sign_hiding": 0,
+  "cabac": 1,
+  "dqp_depth": 2,
+  "tile_cols": 1,
+  "tile_uniform": 1,
+  "intra_depth": 3,
+  "inter_depth": 4,
+  "merge": 3,
+  "period": 30,
+  "beta": 5,
+  "tc": -2,
+  "deblock_override": 0,
+  "idr": 19,
+  "level": "6",
+  "pad": 0,
+  "dm_only": false,
+  "camera": "Mavic3",
+  "source": "D:\\002_Study\\EncoderSimulation\\dj_stream\\Mavic3\\MAVIC3_D-logM.MP4",
+  "source_sha256": "f3c2f747efdbb7f611b4a5f04f4fa1c222a9b5a97a32fe6819eb2ba8f5241407",
+  "source_frames": 480,
+  "source_tile_cols": 1,
+  "simulation_tiles_override": "Disabled by user request"
+}

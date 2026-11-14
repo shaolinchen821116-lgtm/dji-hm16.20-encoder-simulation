@@ -1,0 +1,16 @@
+**/__pycache__/
+**/bin/
+**/HM-16.20/bin/
+**/HM-16.20/build/vc2015/x64/
+**/node_modules/
+**/.venv/
+**/.vs/
+*.obj
+*.lib
+*.pdb
+*.exe
+*.dll
+*.yuv
+*.mp4
+*.MP4
+**/source_analysis/*.265

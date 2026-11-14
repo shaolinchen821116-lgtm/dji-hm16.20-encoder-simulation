@@ -1,0 +1,41 @@
+{
+  "folder": "HM-16.20-DJ_Air3S",
+  "ctu": 32,
+  "max_tu": 16,
+  "min_inter_tu": 8,
+  "max_inter_tu": 16,
+  "intra_sizes": [
+    8,
+    16
+  ],
+  "inter_sizes": [
+    8,
+    16,
+    32
+  ],
+  "intra_nxn": false,
+  "amp": 0,
+  "tmvp": 1,
+  "sign_hiding": 1,
+  "cabac": 0,
+  "dqp_depth": 0,
+  "tile_cols": 1,
+  "tile_uniform": 1,
+  "intra_depth": 1,
+  "inter_depth": 3,
+  "merge": 5,
+  "period": 60,
+  "beta": 0,
+  "tc": 0,
+  "deblock_override": 0,
+  "idr": 20,
+  "level": "5",
+  "pad": 0,
+  "dm_only": true,
+  "camera": "Air3S",
+  "source": "D:\\002_Study\\EncoderSimulation\\dj_stream\\Air3S\\Slow_24mm_4K120fps.MP4",
+  "source_sha256": "7af1a2f285491b958314b209cd9f59720654fd7a8a4aea85cc9b9e21fd5d99d9",
+  "source_frames": 1875,
+  "source_tile_cols": 2,
+  "simulation_tiles_override": "Disabled by user request"
+}

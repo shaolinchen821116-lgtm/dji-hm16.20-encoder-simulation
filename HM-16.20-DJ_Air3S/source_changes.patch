@@ -1,0 +1,2805 @@
+--- a/build/vc2010/TAppCommon_vc2010.vcxproj
++++ b/build/vc2010/TAppCommon_vc2010.vcxproj
+@@ -28,7 +28,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+@@ -37,7 +37,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+@@ -91,7 +91,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+@@ -106,7 +106,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+@@ -121,7 +121,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+@@ -139,7 +139,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemGroup>
+--- a/build/vc2010/TAppDecoder_vc2010.vcxproj
++++ b/build/vc2010/TAppDecoder_vc2010.vcxproj
+@@ -28,7 +28,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+     <ConfigurationType>Application</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+     <ConfigurationType>Application</ConfigurationType>
+@@ -37,7 +37,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+     <ConfigurationType>Application</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+     <ConfigurationType>Application</ConfigurationType>
+@@ -95,10 +95,10 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+     <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX86</TargetMachine>
+     </Link>
+@@ -115,10 +115,10 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+     <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX64</TargetMachine>
+     </Link>
+@@ -135,10 +135,10 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+     <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX86</TargetMachine>
+     </Link>
+@@ -158,10 +158,10 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+     <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX64</TargetMachine>
+     </Link>
+--- a/build/vc2010/TAppDecoderAnalyser_vc2010.vcxproj
++++ b/build/vc2010/TAppDecoderAnalyser_vc2010.vcxproj
+@@ -28,7 +28,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+     <ConfigurationType>Application</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+     <ConfigurationType>Application</ConfigurationType>
+@@ -37,7 +37,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+     <ConfigurationType>Application</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+     <ConfigurationType>Application</ConfigurationType>
+@@ -95,10 +95,10 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+     <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX86</TargetMachine>
+     </Link>
+@@ -115,10 +115,10 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+     <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX64</TargetMachine>
+     </Link>
+@@ -135,10 +135,10 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+     <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX86</TargetMachine>
+     </Link>
+@@ -158,10 +158,10 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+     <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX64</TargetMachine>
+     </Link>
+--- a/build/vc2010/TAppEncoder_vc2010.vcxproj
++++ b/build/vc2010/TAppEncoder_vc2010.vcxproj
+@@ -28,7 +28,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+     <ConfigurationType>Application</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+     <ConfigurationType>Application</ConfigurationType>
+@@ -37,7 +37,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+     <ConfigurationType>Application</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+     <ConfigurationType>Application</ConfigurationType>
+@@ -95,10 +95,10 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+     <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX86</TargetMachine>
+     </Link>
+@@ -115,10 +115,10 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+     <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX64</TargetMachine>
+     </Link>
+@@ -135,10 +135,10 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+     <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX86</TargetMachine>
+     </Link>
+@@ -158,10 +158,10 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+     <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX64</TargetMachine>
+     </Link>
+--- a/build/vc2010/TLibCommon_vc2010.vcxproj
++++ b/build/vc2010/TLibCommon_vc2010.vcxproj
+@@ -28,7 +28,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+@@ -37,7 +37,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+@@ -91,7 +91,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+@@ -106,7 +106,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+@@ -121,7 +121,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+@@ -139,7 +139,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemGroup>
+--- a/build/vc2010/TLibDecoder_vc2010.vcxproj
++++ b/build/vc2010/TLibDecoder_vc2010.vcxproj
+@@ -28,7 +28,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+@@ -37,7 +37,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+@@ -91,7 +91,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+@@ -106,7 +106,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+@@ -121,7 +121,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+@@ -139,7 +139,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemGroup>
+--- a/build/vc2010/TLibDecoderAnalyser_vc2010.vcxproj
++++ b/build/vc2010/TLibDecoderAnalyser_vc2010.vcxproj
+@@ -28,7 +28,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+@@ -37,7 +37,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+@@ -91,7 +91,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+@@ -106,7 +106,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+@@ -121,7 +121,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+@@ -139,7 +139,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemGroup>
+--- a/build/vc2010/TLibEncoder_vc2010.vcxproj
++++ b/build/vc2010/TLibEncoder_vc2010.vcxproj
+@@ -28,7 +28,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+@@ -37,7 +37,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+@@ -91,7 +91,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+@@ -106,7 +106,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+@@ -121,7 +121,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+@@ -139,7 +139,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemGroup>
+--- a/build/vc2010/TLibVideoIO_vc2010.vcxproj
++++ b/build/vc2010/TLibVideoIO_vc2010.vcxproj
+@@ -28,7 +28,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+@@ -37,7 +37,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+@@ -91,7 +91,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+@@ -106,7 +106,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+@@ -121,7 +121,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+@@ -139,7 +139,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemGroup>
+--- a/build/vc2012/TAppCommon_vc2012.vcxproj
++++ b/build/vc2012/TAppCommon_vc2012.vcxproj
+@@ -28,7 +28,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+     <PlatformToolset>v110</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+@@ -39,7 +39,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+     <PlatformToolset>v110</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+@@ -95,7 +95,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+@@ -110,7 +110,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+@@ -125,7 +125,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+@@ -143,7 +143,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemGroup>
+--- a/build/vc2012/TAppDecoder_vc2012.vcxproj
++++ b/build/vc2012/TAppDecoder_vc2012.vcxproj
+@@ -28,7 +28,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+     <ConfigurationType>Application</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+     <PlatformToolset>v110</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+@@ -39,7 +39,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+     <ConfigurationType>Application</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+     <PlatformToolset>v110</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+@@ -99,10 +99,10 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+-    </ClCompile>
+-    <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <DebugInformationFormat>None</DebugInformationFormat>
++    </ClCompile>
++    <Link>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX86</TargetMachine>
+     </Link>
+@@ -119,10 +119,10 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+-    </ClCompile>
+-    <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <DebugInformationFormat>None</DebugInformationFormat>
++    </ClCompile>
++    <Link>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX64</TargetMachine>
+     </Link>
+@@ -139,10 +139,10 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+-    </ClCompile>
+-    <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <DebugInformationFormat>None</DebugInformationFormat>
++    </ClCompile>
++    <Link>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX86</TargetMachine>
+     </Link>
+@@ -162,10 +162,10 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+-    </ClCompile>
+-    <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <DebugInformationFormat>None</DebugInformationFormat>
++    </ClCompile>
++    <Link>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX64</TargetMachine>
+     </Link>
+--- a/build/vc2012/TAppDecoderAnalyser_vc2012.vcxproj
++++ b/build/vc2012/TAppDecoderAnalyser_vc2012.vcxproj
+@@ -28,7 +28,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+     <ConfigurationType>Application</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+     <PlatformToolset>v110</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+@@ -39,7 +39,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+     <ConfigurationType>Application</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+     <PlatformToolset>v110</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+@@ -99,10 +99,10 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+-    </ClCompile>
+-    <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <DebugInformationFormat>None</DebugInformationFormat>
++    </ClCompile>
++    <Link>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX86</TargetMachine>
+     </Link>
+@@ -119,10 +119,10 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+-    </ClCompile>
+-    <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <DebugInformationFormat>None</DebugInformationFormat>
++    </ClCompile>
++    <Link>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX64</TargetMachine>
+     </Link>
+@@ -139,10 +139,10 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+-    </ClCompile>
+-    <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <DebugInformationFormat>None</DebugInformationFormat>
++    </ClCompile>
++    <Link>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX86</TargetMachine>
+     </Link>
+@@ -162,10 +162,10 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+-    </ClCompile>
+-    <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <DebugInformationFormat>None</DebugInformationFormat>
++    </ClCompile>
++    <Link>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX64</TargetMachine>
+     </Link>
+--- a/build/vc2012/TAppEncoder_vc2012.vcxproj
++++ b/build/vc2012/TAppEncoder_vc2012.vcxproj
+@@ -28,7 +28,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+     <ConfigurationType>Application</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+     <PlatformToolset>v110</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+@@ -39,7 +39,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+     <ConfigurationType>Application</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+     <PlatformToolset>v110</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+@@ -99,10 +99,10 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+-    </ClCompile>
+-    <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <DebugInformationFormat>None</DebugInformationFormat>
++    </ClCompile>
++    <Link>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX86</TargetMachine>
+     </Link>
+@@ -119,10 +119,10 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+-    </ClCompile>
+-    <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <DebugInformationFormat>None</DebugInformationFormat>
++    </ClCompile>
++    <Link>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX64</TargetMachine>
+     </Link>
+@@ -139,10 +139,10 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+-    </ClCompile>
+-    <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <DebugInformationFormat>None</DebugInformationFormat>
++    </ClCompile>
++    <Link>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX86</TargetMachine>
+     </Link>
+@@ -162,10 +162,10 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+-    </ClCompile>
+-    <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <DebugInformationFormat>None</DebugInformationFormat>
++    </ClCompile>
++    <Link>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX64</TargetMachine>
+     </Link>
+--- a/build/vc2012/TLibCommon_vc2012.vcxproj
++++ b/build/vc2012/TLibCommon_vc2012.vcxproj
+@@ -28,7 +28,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+     <PlatformToolset>v110</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+@@ -39,7 +39,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+     <PlatformToolset>v110</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+@@ -95,7 +95,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+@@ -110,7 +110,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+@@ -125,7 +125,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+@@ -143,7 +143,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemGroup>
+--- a/build/vc2012/TLibDecoder_vc2012.vcxproj
++++ b/build/vc2012/TLibDecoder_vc2012.vcxproj
+@@ -28,7 +28,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+     <PlatformToolset>v110</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+@@ -39,7 +39,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+     <PlatformToolset>v110</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+@@ -95,7 +95,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+@@ -110,7 +110,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+@@ -125,7 +125,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+@@ -143,7 +143,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemGroup>
+--- a/build/vc2012/TLibDecoderAnalyser_vc2012.vcxproj
++++ b/build/vc2012/TLibDecoderAnalyser_vc2012.vcxproj
+@@ -28,7 +28,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+     <PlatformToolset>v110</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+@@ -39,7 +39,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+     <PlatformToolset>v110</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+@@ -95,7 +95,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+@@ -110,7 +110,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+@@ -125,7 +125,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+@@ -143,7 +143,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemGroup>
+--- a/build/vc2012/TLibEncoder_vc2012.vcxproj
++++ b/build/vc2012/TLibEncoder_vc2012.vcxproj
+@@ -28,7 +28,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+     <PlatformToolset>v110</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+@@ -39,7 +39,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+     <PlatformToolset>v110</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+@@ -95,7 +95,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+@@ -110,7 +110,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+@@ -125,7 +125,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+@@ -143,7 +143,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemGroup>
+--- a/build/vc2012/TLibVideoIO_vc2012.vcxproj
++++ b/build/vc2012/TLibVideoIO_vc2012.vcxproj
+@@ -28,7 +28,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+     <PlatformToolset>v110</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+@@ -39,7 +39,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+     <PlatformToolset>v110</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+@@ -95,7 +95,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+@@ -110,7 +110,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+@@ -125,7 +125,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+@@ -143,7 +143,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemGroup>
+--- a/build/vc2013/TAppCommon_vc2013.vcxproj
++++ b/build/vc2013/TAppCommon_vc2013.vcxproj
+@@ -28,7 +28,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+     <PlatformToolset>v120</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+@@ -39,7 +39,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+     <PlatformToolset>v120</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+@@ -95,7 +95,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+@@ -110,7 +110,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+@@ -125,7 +125,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+@@ -143,7 +143,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemGroup>
+--- a/build/vc2013/TAppDecoder_vc2013.vcxproj
++++ b/build/vc2013/TAppDecoder_vc2013.vcxproj
+@@ -28,7 +28,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+     <ConfigurationType>Application</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+     <PlatformToolset>v120</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+@@ -39,7 +39,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+     <ConfigurationType>Application</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+     <PlatformToolset>v120</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+@@ -99,10 +99,10 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+-    </ClCompile>
+-    <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <DebugInformationFormat>None</DebugInformationFormat>
++    </ClCompile>
++    <Link>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX86</TargetMachine>
+     </Link>
+@@ -119,10 +119,10 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+-    </ClCompile>
+-    <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <DebugInformationFormat>None</DebugInformationFormat>
++    </ClCompile>
++    <Link>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX64</TargetMachine>
+     </Link>
+@@ -139,10 +139,10 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+-    </ClCompile>
+-    <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <DebugInformationFormat>None</DebugInformationFormat>
++    </ClCompile>
++    <Link>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX86</TargetMachine>
+     </Link>
+@@ -162,10 +162,10 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+-    </ClCompile>
+-    <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <DebugInformationFormat>None</DebugInformationFormat>
++    </ClCompile>
++    <Link>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX64</TargetMachine>
+     </Link>
+--- a/build/vc2013/TAppDecoderAnalyser_vc2013.vcxproj
++++ b/build/vc2013/TAppDecoderAnalyser_vc2013.vcxproj
+@@ -28,7 +28,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+     <ConfigurationType>Application</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+     <PlatformToolset>v120</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+@@ -39,7 +39,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+     <ConfigurationType>Application</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+     <PlatformToolset>v120</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+@@ -99,10 +99,10 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+-    </ClCompile>
+-    <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <DebugInformationFormat>None</DebugInformationFormat>
++    </ClCompile>
++    <Link>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX86</TargetMachine>
+     </Link>
+@@ -119,10 +119,10 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+-    </ClCompile>
+-    <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <DebugInformationFormat>None</DebugInformationFormat>
++    </ClCompile>
++    <Link>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX64</TargetMachine>
+     </Link>
+@@ -139,10 +139,10 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+-    </ClCompile>
+-    <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <DebugInformationFormat>None</DebugInformationFormat>
++    </ClCompile>
++    <Link>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX86</TargetMachine>
+     </Link>
+@@ -162,10 +162,10 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+-    </ClCompile>
+-    <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <DebugInformationFormat>None</DebugInformationFormat>
++    </ClCompile>
++    <Link>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX64</TargetMachine>
+     </Link>
+--- a/build/vc2013/TAppEncoder_vc2013.vcxproj
++++ b/build/vc2013/TAppEncoder_vc2013.vcxproj
+@@ -28,7 +28,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+     <ConfigurationType>Application</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+     <PlatformToolset>v120</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+@@ -39,7 +39,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+     <ConfigurationType>Application</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+     <PlatformToolset>v120</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+@@ -99,10 +99,10 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+-    </ClCompile>
+-    <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <DebugInformationFormat>None</DebugInformationFormat>
++    </ClCompile>
++    <Link>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX86</TargetMachine>
+     </Link>
+@@ -119,10 +119,10 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+-    </ClCompile>
+-    <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <DebugInformationFormat>None</DebugInformationFormat>
++    </ClCompile>
++    <Link>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX64</TargetMachine>
+     </Link>
+@@ -139,10 +139,10 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+-    </ClCompile>
+-    <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <DebugInformationFormat>None</DebugInformationFormat>
++    </ClCompile>
++    <Link>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX86</TargetMachine>
+     </Link>
+@@ -162,10 +162,10 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+-    </ClCompile>
+-    <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <DebugInformationFormat>None</DebugInformationFormat>
++    </ClCompile>
++    <Link>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX64</TargetMachine>
+     </Link>
+--- a/build/vc2013/TLibCommon_vc2013.vcxproj
++++ b/build/vc2013/TLibCommon_vc2013.vcxproj
+@@ -28,7 +28,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+     <PlatformToolset>v120</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+@@ -39,7 +39,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+     <PlatformToolset>v120</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+@@ -95,7 +95,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+@@ -110,7 +110,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+@@ -125,7 +125,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+@@ -143,7 +143,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemGroup>
+--- a/build/vc2013/TLibDecoder_vc2013.vcxproj
++++ b/build/vc2013/TLibDecoder_vc2013.vcxproj
+@@ -28,7 +28,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+     <PlatformToolset>v120</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+@@ -39,7 +39,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+     <PlatformToolset>v120</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+@@ -95,7 +95,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+@@ -110,7 +110,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+@@ -125,7 +125,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+@@ -143,7 +143,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemGroup>
+--- a/build/vc2013/TLibDecoderAnalyser_vc2013.vcxproj
++++ b/build/vc2013/TLibDecoderAnalyser_vc2013.vcxproj
+@@ -28,7 +28,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+     <PlatformToolset>v120</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+@@ -39,7 +39,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+     <PlatformToolset>v120</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+@@ -95,7 +95,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+@@ -110,7 +110,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+@@ -125,7 +125,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+@@ -143,7 +143,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemGroup>
+--- a/build/vc2013/TLibEncoder_vc2013.vcxproj
++++ b/build/vc2013/TLibEncoder_vc2013.vcxproj
+@@ -28,7 +28,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+     <PlatformToolset>v120</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+@@ -39,7 +39,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+     <PlatformToolset>v120</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+@@ -95,7 +95,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+@@ -110,7 +110,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+@@ -125,7 +125,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+@@ -143,7 +143,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemGroup>
+--- a/build/vc2013/TLibVideoIO_vc2013.vcxproj
++++ b/build/vc2013/TLibVideoIO_vc2013.vcxproj
+@@ -28,7 +28,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+     <PlatformToolset>v120</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+@@ -39,7 +39,7 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
+     <PlatformToolset>v120</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+@@ -95,7 +95,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+@@ -110,7 +110,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+@@ -125,7 +125,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+@@ -143,7 +143,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemGroup>
+--- a/build/vc2015/TAppCommon_vc2015.vcxproj
++++ b/build/vc2015/TAppCommon_vc2015.vcxproj
+@@ -28,24 +28,24 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
+-    <PlatformToolset>v140</PlatformToolset>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
++    <PlatformToolset>v145</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <PlatformToolset>v140</PlatformToolset>
++    <PlatformToolset>v145</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
+-    <PlatformToolset>v140</PlatformToolset>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
++    <PlatformToolset>v145</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <PlatformToolset>v140</PlatformToolset>
++    <PlatformToolset>v145</PlatformToolset>
+   </PropertyGroup>
+   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+   <ImportGroup Label="ExtensionSettings">
+@@ -95,7 +95,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+@@ -110,7 +110,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+@@ -125,7 +125,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+@@ -143,7 +143,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemGroup>
+--- a/build/vc2015/TAppDecoder_vc2015.vcxproj
++++ b/build/vc2015/TAppDecoder_vc2015.vcxproj
+@@ -28,24 +28,24 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+     <ConfigurationType>Application</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
+-    <PlatformToolset>v140</PlatformToolset>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
++    <PlatformToolset>v145</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+     <ConfigurationType>Application</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <PlatformToolset>v140</PlatformToolset>
++    <PlatformToolset>v145</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+     <ConfigurationType>Application</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
+-    <PlatformToolset>v140</PlatformToolset>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
++    <PlatformToolset>v145</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+     <ConfigurationType>Application</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <PlatformToolset>v140</PlatformToolset>
++    <PlatformToolset>v145</PlatformToolset>
+   </PropertyGroup>
+   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+   <ImportGroup Label="ExtensionSettings">
+@@ -99,10 +99,10 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+-    </ClCompile>
+-    <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <DebugInformationFormat>None</DebugInformationFormat>
++    </ClCompile>
++    <Link>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX86</TargetMachine>
+     </Link>
+@@ -119,10 +119,10 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+-    </ClCompile>
+-    <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <DebugInformationFormat>None</DebugInformationFormat>
++    </ClCompile>
++    <Link>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX64</TargetMachine>
+     </Link>
+@@ -139,10 +139,10 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+-    </ClCompile>
+-    <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <DebugInformationFormat>None</DebugInformationFormat>
++    </ClCompile>
++    <Link>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX86</TargetMachine>
+     </Link>
+@@ -162,10 +162,10 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+-    </ClCompile>
+-    <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <DebugInformationFormat>None</DebugInformationFormat>
++    </ClCompile>
++    <Link>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX64</TargetMachine>
+     </Link>
+--- a/build/vc2015/TAppDecoderAnalyser_vc2015.vcxproj
++++ b/build/vc2015/TAppDecoderAnalyser_vc2015.vcxproj
+@@ -28,24 +28,24 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+     <ConfigurationType>Application</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
+-    <PlatformToolset>v140</PlatformToolset>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
++    <PlatformToolset>v145</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+     <ConfigurationType>Application</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <PlatformToolset>v140</PlatformToolset>
++    <PlatformToolset>v145</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+     <ConfigurationType>Application</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
+-    <PlatformToolset>v140</PlatformToolset>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
++    <PlatformToolset>v145</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+     <ConfigurationType>Application</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <PlatformToolset>v140</PlatformToolset>
++    <PlatformToolset>v145</PlatformToolset>
+   </PropertyGroup>
+   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+   <ImportGroup Label="ExtensionSettings">
+@@ -99,10 +99,10 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+-    </ClCompile>
+-    <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <DebugInformationFormat>None</DebugInformationFormat>
++    </ClCompile>
++    <Link>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX86</TargetMachine>
+     </Link>
+@@ -119,10 +119,10 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+-    </ClCompile>
+-    <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <DebugInformationFormat>None</DebugInformationFormat>
++    </ClCompile>
++    <Link>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX64</TargetMachine>
+     </Link>
+@@ -139,10 +139,10 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+-    </ClCompile>
+-    <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <DebugInformationFormat>None</DebugInformationFormat>
++    </ClCompile>
++    <Link>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX86</TargetMachine>
+     </Link>
+@@ -162,10 +162,10 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+-    </ClCompile>
+-    <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <DebugInformationFormat>None</DebugInformationFormat>
++    </ClCompile>
++    <Link>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX64</TargetMachine>
+     </Link>
+--- a/build/vc2015/TAppEncoder_vc2015.vcxproj
++++ b/build/vc2015/TAppEncoder_vc2015.vcxproj
+@@ -28,24 +28,24 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+     <ConfigurationType>Application</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
+-    <PlatformToolset>v140</PlatformToolset>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
++    <PlatformToolset>v145</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+     <ConfigurationType>Application</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <PlatformToolset>v140</PlatformToolset>
++    <PlatformToolset>v145</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+     <ConfigurationType>Application</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
+-    <PlatformToolset>v140</PlatformToolset>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
++    <PlatformToolset>v145</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+     <ConfigurationType>Application</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <PlatformToolset>v140</PlatformToolset>
++    <PlatformToolset>v145</PlatformToolset>
+   </PropertyGroup>
+   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+   <ImportGroup Label="ExtensionSettings">
+@@ -99,10 +99,10 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+-    </ClCompile>
+-    <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <DebugInformationFormat>None</DebugInformationFormat>
++    </ClCompile>
++    <Link>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX86</TargetMachine>
+     </Link>
+@@ -119,10 +119,10 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+-    </ClCompile>
+-    <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <DebugInformationFormat>None</DebugInformationFormat>
++    </ClCompile>
++    <Link>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX64</TargetMachine>
+     </Link>
+@@ -139,10 +139,10 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+-    </ClCompile>
+-    <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <DebugInformationFormat>None</DebugInformationFormat>
++    </ClCompile>
++    <Link>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX86</TargetMachine>
+     </Link>
+@@ -162,10 +162,10 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+-    </ClCompile>
+-    <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <DebugInformationFormat>None</DebugInformationFormat>
++    </ClCompile>
++    <Link>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <SubSystem>Console</SubSystem>
+       <TargetMachine>MachineX64</TargetMachine>
+     </Link>
+--- a/build/vc2015/TAppMCTSExtractor_vc2015.vcxproj
++++ b/build/vc2015/TAppMCTSExtractor_vc2015.vcxproj
+@@ -28,27 +28,27 @@
+     <ConfigurationType>Application</ConfigurationType>
+     <UseDebugLibraries>false</UseDebugLibraries>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
+-    <PlatformToolset>v140</PlatformToolset>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
++    <PlatformToolset>v145</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+     <ConfigurationType>Application</ConfigurationType>
+     <UseDebugLibraries>true</UseDebugLibraries>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <PlatformToolset>v140</PlatformToolset>
++    <PlatformToolset>v145</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+     <ConfigurationType>Application</ConfigurationType>
+     <UseDebugLibraries>false</UseDebugLibraries>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
+-    <PlatformToolset>v140</PlatformToolset>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
++    <PlatformToolset>v145</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+     <ConfigurationType>Application</ConfigurationType>
+     <UseDebugLibraries>true</UseDebugLibraries>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <PlatformToolset>v140</PlatformToolset>
++    <PlatformToolset>v145</PlatformToolset>
+   </PropertyGroup>
+   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+   <ImportGroup Label="ExtensionSettings">
+@@ -90,12 +90,12 @@
+       <Optimization>Disabled</Optimization>
+       <SDLCheck>true</SDLCheck>
+       <AdditionalIncludeDirectories>$(SolutionDir)\..\source\Lib\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+     </ClCompile>
+     <Link>
+-      <GenerateDebugInformation>true</GenerateDebugInformation>
++      <GenerateDebugInformation>false</GenerateDebugInformation>
+       <Profile>true</Profile>
+     </Link>
+   </ItemDefinitionGroup>
+@@ -106,7 +106,7 @@
+       <SDLCheck>true</SDLCheck>
+       <AdditionalIncludeDirectories>$(SolutionDir)\..\source\Lib\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+       <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+     </ClCompile>
+     <Link>
+--- a/build/vc2015/TLibCommon_vc2015.vcxproj
++++ b/build/vc2015/TLibCommon_vc2015.vcxproj
+@@ -28,24 +28,24 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
+-    <PlatformToolset>v140</PlatformToolset>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
++    <PlatformToolset>v145</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <PlatformToolset>v140</PlatformToolset>
++    <PlatformToolset>v145</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
+-    <PlatformToolset>v140</PlatformToolset>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
++    <PlatformToolset>v145</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <PlatformToolset>v140</PlatformToolset>
++    <PlatformToolset>v145</PlatformToolset>
+   </PropertyGroup>
+   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+   <ImportGroup Label="ExtensionSettings">
+@@ -95,7 +95,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+@@ -110,7 +110,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+@@ -125,7 +125,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+@@ -143,7 +143,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemGroup>
+--- a/build/vc2015/TLibDecoder_vc2015.vcxproj
++++ b/build/vc2015/TLibDecoder_vc2015.vcxproj
+@@ -28,24 +28,24 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
+-    <PlatformToolset>v140</PlatformToolset>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
++    <PlatformToolset>v145</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <PlatformToolset>v140</PlatformToolset>
++    <PlatformToolset>v145</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
+-    <PlatformToolset>v140</PlatformToolset>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
++    <PlatformToolset>v145</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <PlatformToolset>v140</PlatformToolset>
++    <PlatformToolset>v145</PlatformToolset>
+   </PropertyGroup>
+   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+   <ImportGroup Label="ExtensionSettings">
+@@ -95,7 +95,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+@@ -110,7 +110,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+@@ -125,7 +125,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+@@ -143,7 +143,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemGroup>
+--- a/build/vc2015/TLibDecoderAnalyser_vc2015.vcxproj
++++ b/build/vc2015/TLibDecoderAnalyser_vc2015.vcxproj
+@@ -28,24 +28,24 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
+-    <PlatformToolset>v140</PlatformToolset>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
++    <PlatformToolset>v145</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <PlatformToolset>v140</PlatformToolset>
++    <PlatformToolset>v145</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
+-    <PlatformToolset>v140</PlatformToolset>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
++    <PlatformToolset>v145</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <PlatformToolset>v140</PlatformToolset>
++    <PlatformToolset>v145</PlatformToolset>
+   </PropertyGroup>
+   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+   <ImportGroup Label="ExtensionSettings">
+@@ -95,7 +95,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+@@ -110,7 +110,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+@@ -125,7 +125,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+@@ -143,7 +143,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemGroup>
+--- a/build/vc2015/TLibEncoder_vc2015.vcxproj
++++ b/build/vc2015/TLibEncoder_vc2015.vcxproj
+@@ -28,24 +28,24 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
+-    <PlatformToolset>v140</PlatformToolset>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
++    <PlatformToolset>v145</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <PlatformToolset>v140</PlatformToolset>
++    <PlatformToolset>v145</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
+-    <PlatformToolset>v140</PlatformToolset>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
++    <PlatformToolset>v145</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <PlatformToolset>v140</PlatformToolset>
++    <PlatformToolset>v145</PlatformToolset>
+   </PropertyGroup>
+   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+   <ImportGroup Label="ExtensionSettings">
+@@ -95,7 +95,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+@@ -110,7 +110,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+@@ -125,7 +125,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+@@ -143,7 +143,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemGroup>
+--- a/build/vc2015/TLibVideoIO_vc2015.vcxproj
++++ b/build/vc2015/TLibVideoIO_vc2015.vcxproj
+@@ -28,24 +28,24 @@
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
+-    <PlatformToolset>v140</PlatformToolset>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
++    <PlatformToolset>v145</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <PlatformToolset>v140</PlatformToolset>
++    <PlatformToolset>v145</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <WholeProgramOptimization>true</WholeProgramOptimization>
+-    <PlatformToolset>v140</PlatformToolset>
++    <WholeProgramOptimization>false</WholeProgramOptimization>
++    <PlatformToolset>v145</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <CharacterSet>MultiByte</CharacterSet>
+-    <PlatformToolset>v140</PlatformToolset>
++    <PlatformToolset>v145</PlatformToolset>
+   </PropertyGroup>
+   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+   <ImportGroup Label="ExtensionSettings">
+@@ -95,7 +95,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+@@ -110,7 +110,7 @@
+       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+@@ -125,7 +125,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+@@ -143,7 +143,7 @@
+       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
+       <WarningLevel>Level3</WarningLevel>
+-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
++      <DebugInformationFormat>None</DebugInformationFormat>
+     </ClCompile>
+   </ItemDefinitionGroup>
+   <ItemGroup>
+--- a/source/Lib/TLibCommon/PocketStats.h
++++ b/source/Lib/TLibCommon/PocketStats.h
+@@ -0,0 +1,139 @@
++// Local diagnostic extension. HM license remains in COPYING and source headers.
++#ifndef POCKET_STATS_H
++#define POCKET_STATS_H
++#include "TComPic.h"
++#include "TComDataCU.h"
++#include <map>
++#include <string>
++#include <fstream>
++#include <cstdlib>
++#include <stdexcept>
++
++// Counts final decoded leaves, never the encoder's temporary RD candidates.
++// POCKET_STATS_FILE enables one compact JSON record per decoded picture.
++class PocketStats {
++  typedef std::map<int, unsigned long long> Counts;
++  std::map<std::string, Counts> hist;
++  unsigned long long skipped,merged,amvp,ts,cbfY;
++  int maxMerge;
++  std::ofstream out;
++  bool active;
++  PocketStats():skipped(0),merged(0),amvp(0),ts(0),cbfY(0),maxMerge(-1),active(false) {
++    const char* path=std::getenv("POCKET_STATS_FILE");
++    if(path && *path) {out.open(path);if(!out)throw std::runtime_error("Cannot open POCKET_STATS_FILE");active=true;}
++  }
++  UInt transforms(TComDataCU* cu,UInt index,UInt depth,UInt size,UInt count) {
++    if(cu->getTransformIdx(index)>depth) {
++      UInt leaves=0;
++      for(UInt i=0;i<4;i++)leaves+=transforms(cu,index+i*count/4,depth+1,size/2,count/4);
++      return leaves;
++    }
++    hist["luma_tu_size"][size]++;
++    hist[cu->isIntra(0)?"intra_cu_tu_pairs":"inter_cu_tu_pairs"][cu->getWidth(0)*1024+size]++;
++    hist["rqt_depth"][depth]++;
++    hist[cu->isIntra(0)?"intra_luma_tu_size":"inter_luma_tu_size"][size]++;
++    cbfY+=cu->getCbf(index,COMPONENT_Y,depth)!=0;
++    if(cu->isIntra(0) && cu->getWidth(0)==16)hist["intra_cu16_luma_tu_size"][size]++;
++    if(cu->isIntra(0) && cu->getWidth(0)==8) {
++      hist["intra_cu8_luma_tu_size"][size]++;
++      hist["intra_cu8_luma_tu_depth"][depth]++;
++      if(cu->getCbf(index,COMPONENT_Y,depth))hist["intra_cu8_cbf_luma_tu_size"][size]++;
++    }
++    for(int c=0;c<3;c++) {
++      // In 4:2:0, four luma TU4 share one chroma TU4 per component.
++      // Do not invent 2x2 chroma TUs or count that shared TU four times.
++      const UInt partsPer4=cu->getPic()->getNumPartitionsInCtu()*16/(cu->getSlice()->getSPS()->getMaxCUWidth()*cu->getSlice()->getSPS()->getMaxCUHeight());
++      if(c>0 && size==4 && index%(4*partsPer4)!=0)continue;
++      ts+=cu->getTransformSkip(index,ComponentID(c))!=0;
++      hist[c==0?"luma_component_tu":"chroma_component_tu"][c==0?size:std::max<UInt>(4,size/2)]++;
++    }
++    return 1;
++  }
++public:
++  static PocketStats& instance(){static PocketStats value;return value;}
++  void leaf(TComDataCU* cu) {
++    if(!active)return;
++    const int size=cu->getWidth(0),part=cu->getPartitionSize(0);
++    const bool intra=cu->isIntra(0);
++    hist["cu_size"][size]++;hist["cu_depth"][cu->getDepth(0)]++;
++    hist[intra?"intra_cu_size":"inter_cu_size"][size]++;
++    hist["cu_qp"][cu->getQP(0)]++;
++    // Track CUs intersecting the bottom 8 visible luma rows. This is a
++    // regression probe for implicit boundary splits, not a mode constraint.
++    const TComSPS* sps=cu->getSlice()->getSPS();
++    const Window& crop=sps->getConformanceWindow();
++    const int visibleBottom=sps->getPicHeightInLumaSamples()-crop.getWindowBottomOffset();
++    if(int(cu->getCUPelY()) < visibleBottom && int(cu->getCUPelY())+size > visibleBottom-8) {
++      hist["bottom_visible_cu_mode"][intra?1:0]++;
++      hist["bottom_visible_cu_size"][size]++;
++      hist[intra?"bottom_visible_intra_cu_size":"bottom_visible_inter_cu_size"][size]++;
++      hist["bottom_visible_cu_partition"][part]++;
++    }
++
++    hist["cu_partition"][part]++;
++    skipped+=cu->isSkipped(0);
++    const int n=part==SIZE_2Nx2N?1:part==SIZE_NxN?4:2;
++    for(int p=0;p<n;p++) {
++      UInt addr=0;Int w=0,h=0;cu->getPartIndexAndSize(p,addr,w,h);
++      hist["pu_partition"][part]++;
++      hist[intra?"intra_pu_dimensions":"inter_pu_dimensions"][w*1024+h]++;
++      if(!intra && w==8 && h==8)hist["inter_pu8x8_cu_size"][size]++;
++      if(intra) {
++        hist["intra_pu_width"][w]++;
++        hist["intra_luma_mode"][cu->getIntraDir(CHANNEL_TYPE_LUMA,addr)]++;
++        hist["intra_chroma_mode"][cu->getIntraDir(CHANNEL_TYPE_CHROMA,addr)]++;
++      } else {
++        const bool merge=cu->getMergeFlag(addr);
++        merged+=merge;amvp+=!merge;
++        if(merge) {hist["merge_index"][cu->getMergeIndex(addr)]++;maxMerge=std::max(maxMerge,int(cu->getMergeIndex(addr)));}
++        for(int l=0;l<2;l++)if(!std::getenv("CAMERA_STATS_FAST") && cu->getCUMvField(RefPicList(l))->getRefIdx(addr)>=0) {
++          TComMv mv=cu->getCUMvField(RefPicList(l))->getMv(addr);
++          hist["mv_x_quarterpel"][mv.getHor()]++;hist["mv_y_quarterpel"][mv.getVer()]++;
++        }
++      }
++    }
++    if(intra || cu->getQtRootCbf(0)) {
++      const UInt leaves=transforms(cu,0,0,size,cu->getPic()->getNumPartitionsInCtu()>>(2*cu->getDepth(0)));
++      hist[intra?"intra_cu_tu_leaf_counts":"inter_cu_tu_leaf_counts"][size*1024+leaves]++;
++      if(intra && size==8) {
++        hist["intra_cu8_luma_tu_leaves_per_cu"][leaves]++;
++        hist["intra_cu8_pu_partition"][part]++;
++      }
++    }
++  }
++  void finish(TComPic* pic) {
++    if(!active)return;
++    TComSlice* sl=pic->getSlice(0);const TComSPS* sp=sl->getSPS();const TComPPS* pp=sl->getPPS();
++    out<<"{\"poc\":"<<sl->getPOC()<<",\"type\":\""<<(sl->isIntra()?"I":sl->isInterP()?"P":"B")<<"\",\"slice_qp\":"<<sl->getSliceQp();
++    const Window& crop=sp->getConformanceWindow();
++    out<<",\"coded_width\":"<<sp->getPicWidthInLumaSamples()<<",\"coded_height\":"<<sp->getPicHeightInLumaSamples();
++    out<<",\"crop_left\":"<<crop.getWindowLeftOffset()<<",\"crop_right\":"<<crop.getWindowRightOffset()<<",\"crop_top\":"<<crop.getWindowTopOffset()<<",\"crop_bottom\":"<<crop.getWindowBottomOffset();
++    out<<",\"bitdepth\":"<<sp->getBitDepth(CHANNEL_TYPE_LUMA)<<",\"ctu_size\":"<<sp->getMaxCUWidth();
++    out<<",\"min_cu\":"<<(1<<sp->getLog2MinCodingBlockSize())<<",\"max_cu\":"<<(1<<(sp->getLog2MinCodingBlockSize()+sp->getLog2DiffMaxMinCodingBlockSize()));
++    out<<",\"min_tu\":"<<(1<<sp->getQuadtreeTULog2MinSize())<<",\"max_tu\":"<<(1<<sp->getQuadtreeTULog2MaxSize());
++    out<<",\"syntax_intra_transform_depth\":"<<sp->getQuadtreeTUMaxDepthIntra()-1<<",\"syntax_inter_transform_depth\":"<<sp->getQuadtreeTUMaxDepthInter()-1;
++    out<<",\"amp\":"<<sp->getUseAMP()<<",\"tmvp_sps\":"<<sp->getSPSTemporalMVPEnabledFlag()<<",\"tmvp_slice\":"<<sl->getEnableTMVPFlag();
++    out<<",\"ts_allowed\":"<<pp->getUseTransformSkip()<<",\"sao\":"<<sp->getUseSAO()<<",\"strong_intra_smoothing\":"<<sp->getUseStrongIntraSmoothing();
++    out<<",\"pcm\":"<<sp->getUsePCM()<<",\"tiles\":"<<pp->getTilesEnabledFlag()<<",\"wpp\":"<<pp->getEntropyCodingSyncEnabledFlag();
++    out<<",\"deblocking_control_present\":"<<pp->getDeblockingFilterControlPresentFlag()<<",\"deblocking_disabled\":"<<sl->getDeblockingFilterDisable();
++    out<<",\"sign_hiding\":"<<pp->getSignDataHidingEnabledFlag()<<",\"weighted_pred_p\":"<<pp->getUseWP()<<",\"weighted_pred_b\":"<<pp->getWPBiPred();
++    out<<",\"scaling_list\":"<<sp->getScalingListFlag()<<",\"constrained_intra\":"<<pp->getConstrainedIntraPred();
++    out<<",\"transquant_bypass_allowed\":"<<pp->getTransquantBypassEnabledFlag()<<",\"cabac_init_present\":"<<pp->getCabacInitPresentFlag();
++    out<<",\"tile_cols\":"<<pp->getNumTileColumnsMinus1()+1<<",\"tile_rows\":"<<pp->getNumTileRowsMinus1()+1;
++    out<<",\"tile_uniform\":"<<pp->getTileUniformSpacingFlag()<<",\"nal_type\":"<<int(sl->getNalUnitType())<<",\"temporal_id\":"<<sl->getTLayer();
++    out<<",\"beta_offset\":"<<sl->getDeblockingFilterBetaOffsetDiv2()<<",\"tc_offset\":"<<sl->getDeblockingFilterTcOffsetDiv2();
++    out<<",\"ref_pocs\":[";
++    for(int l=0;l<2;l++){if(l)out<<",";out<<"[";for(int i=0;i<sl->getNumRefIdx(RefPicList(l));i++){if(i)out<<",";out<<sl->getRefPOC(RefPicList(l),i);}out<<"]";}out<<"]";
++    out<<",\"dqp_enabled\":"<<pp->getUseDQP()<<",\"qg_size\":"<<(sp->getMaxCUWidth()>>pp->getMaxCuDQPDepth());
++    out<<",\"max_merge_candidates\":"<<sl->getMaxNumMergeCand()<<",\"l0_refs\":"<<sl->getNumRefIdx(REF_PIC_LIST_0)<<",\"l1_refs\":"<<sl->getNumRefIdx(REF_PIC_LIST_1);
++    out<<",\"skip_cus\":"<<skipped<<",\"merge_pus\":"<<merged<<",\"amvp_pus\":"<<amvp<<",\"transform_skip_tus\":"<<ts<<",\"luma_cbf_tus\":"<<cbfY<<",\"max_merge_index\":"<<maxMerge;
++    out<<",\"histograms\":{";bool first=true;
++    for(std::map<std::string,Counts>::const_iterator h=hist.begin();h!=hist.end();++h) {
++      if(!first)out<<",";first=false;out<<"\""<<h->first<<"\":{";bool f=true;
++      for(Counts::const_iterator c=h->second.begin();c!=h->second.end();++c){if(!f)out<<",";f=false;out<<"\""<<c->first<<"\":"<<c->second;}out<<"}";
++    }
++    out<<"}}\n";out.flush();if(!out)throw std::runtime_error("Pocket stats write failed");
++    hist.clear();skipped=merged=amvp=ts=cbfY=0;maxMerge=-1;
++  }
++};
++#endif
+--- a/source/Lib/TLibDecoder/TDecCu.cpp
++++ b/source/Lib/TLibDecoder/TDecCu.cpp
+@@ -36,6 +36,7 @@
+ */
+ 
+ #include "TDecCu.h"
++#include "TLibCommon/PocketStats.h"
+ #include "TLibCommon/TComTU.h"
+ #include "TLibCommon/TComPrediction.h"
+ 
+@@ -397,6 +398,7 @@
+   m_ppcYuvResi[uiDepth]->clear();
+ 
+   m_ppcCU[uiDepth]->copySubCU( pCtu, uiAbsPartIdx );
++  PocketStats::instance().leaf(m_ppcCU[uiDepth]);
+ 
+   switch( m_ppcCU[uiDepth]->getPredictionMode(0) )
+   {
+--- a/source/Lib/TLibDecoder/TDecGop.cpp
++++ b/source/Lib/TLibDecoder/TDecGop.cpp
+@@ -36,6 +36,7 @@
+ */
+ 
+ #include "TDecGop.h"
++#include "TLibCommon/PocketStats.h"
+ #include "TDecCAVLC.h"
+ #include "TDecSbac.h"
+ #include "TDecBinCoder.h"
+@@ -151,6 +152,7 @@
+     m_pcSAO->PCMLFDisableProcess(pcPic);
+   }
+ 
++  PocketStats::instance().finish(pcPic);
+   pcPic->compressMotion();
+   TChar c = (pcSlice->isIntra() ? 'I' : pcSlice->isInterP() ? 'P' : 'B');
+   if (!pcSlice->isReferenced())
+--- a/source/Lib/TLibEncoder/CameraPolicy.h
++++ b/source/Lib/TLibEncoder/CameraPolicy.h
+@@ -0,0 +1,12 @@
++// Local experiment policy; retain HM copyright notices in source and COPYING.
++#ifndef DJI_CAMERA_POLICY_H
++#define DJI_CAMERA_POLICY_H
++struct CameraPolicy {
++  static bool interSize(unsigned w) {return w == 8 || w == 16 || w == 32;}
++  static bool intraSize(unsigned w) {return w == 8 || w == 16;}
++  static bool intraNxN() {return false;}
++  static bool amp() {return false;}
++  static unsigned minInterTU() {return 8;}
++  static unsigned maxInterTU() {return 16;}
++};
++#endif
+--- a/source/Lib/TLibEncoder/TEncCu.cpp
++++ b/source/Lib/TLibEncoder/TEncCu.cpp
+@@ -38,6 +38,7 @@
+ #include <stdio.h>
+ #include "TEncTop.h"
+ #include "TEncCu.h"
++#include "CameraPolicy.h"
+ #include "TEncAnalyze.h"
+ #include "TLibCommon/Debug.h"
+ 
+@@ -732,10 +733,11 @@
+           }
+         }
+ 
++        const Bool cameraNeedsIntra = rpcBestCU->getTotalCost()==MAX_DOUBLE;
+         // do normal intra modes
+         // speedup for inter frames
+ #if MCTS_ENC_CHECK
+-        if ( m_pcEncCfg->getTMCTSSEITileConstraint() || (rpcBestCU->getSlice()->getSliceType() == I_SLICE) ||
++        if ( cameraNeedsIntra || m_pcEncCfg->getTMCTSSEITileConstraint() || (rpcBestCU->getSlice()->getSliceType() == I_SLICE) ||
+              ((!m_pcEncCfg->getDisableIntraPUsInInterSlices()) && (
+              (rpcBestCU->getCbf(0, COMPONENT_Y) != 0) ||
+              ((rpcBestCU->getCbf(0, COMPONENT_Cb) != 0) && (numberValidComponents > COMPONENT_Cb)) ||
+@@ -743,7 +745,7 @@
+             )))
+         {
+ #else
+-        if((rpcBestCU->getSlice()->getSliceType() == I_SLICE)                                        ||
++        if(cameraNeedsIntra || (rpcBestCU->getSlice()->getSliceType() == I_SLICE)                                        ||
+             ((!m_pcEncCfg->getDisableIntraPUsInInterSlices()) && (
+               (rpcBestCU->getCbf( 0, COMPONENT_Y  ) != 0)                                            ||
+              ((rpcBestCU->getCbf( 0, COMPONENT_Cb ) != 0) && (numberValidComponents > COMPONENT_Cb)) ||
+@@ -1292,6 +1294,9 @@
+  */
+ Void TEncCu::xCheckRDCostMerge2Nx2N( TComDataCU*& rpcBestCU, TComDataCU*& rpcTempCU DEBUG_STRING_FN_DECLARE(sDebug), Bool *earlyDetectionSkipMode )
+ {
++  // Camera policy inferred from the full reference clip.
++  if (!CameraPolicy::interSize(rpcTempCU->getWidth(0))) return;
++
+   assert( rpcTempCU->getSlice()->getSliceType() != I_SLICE );
+   if(getFastDeltaQp())
+   {
+@@ -1442,6 +1447,12 @@
+ Void TEncCu::xCheckRDCostInter( TComDataCU*& rpcBestCU, TComDataCU*& rpcTempCU, PartSize ePartSize )
+ #endif
+ {
++  // Camera policy inferred from the full reference clip.
++  const UInt cameraWidth = rpcTempCU->getWidth(0);
++  if (!CameraPolicy::interSize(cameraWidth) || ePartSize == SIZE_NxN ||
++      (cameraWidth == 8 && ePartSize != SIZE_2Nx2N) ||
++      (!CameraPolicy::amp() && ePartSize >= SIZE_2NxnU)) return;
++
+   DEBUG_STRING_NEW(sTest)
+ 
+   if(getFastDeltaQp())
+@@ -1502,6 +1513,10 @@
+                                 PartSize     eSize
+                                 DEBUG_STRING_FN_DECLARE(sDebug) )
+ {
++  // Camera policy inferred from the full reference clip.
++  if (!CameraPolicy::intraSize(rpcTempCU->getWidth(0)) ||
++      (eSize != SIZE_2Nx2N && !(CameraPolicy::intraNxN() && rpcTempCU->getWidth(0)==8 && eSize==SIZE_NxN))) return;
++
+   DEBUG_STRING_NEW(sTest)
+ 
+   if(getFastDeltaQp())
+--- a/source/Lib/TLibEncoder/TEncGOP.cpp
++++ b/source/Lib/TLibEncoder/TEncGOP.cpp
+@@ -2964,7 +2964,7 @@
+ {
+   if (pocCurr == 0)
+   {
+-    return NAL_UNIT_CODED_SLICE_IDR_W_RADL;
++    return NAL_UNIT_CODED_SLICE_IDR_N_LP;
+   }
+ 
+   if(m_pcCfg->getEfficientFieldIRAPEnabled() && isField && pocCurr == 1)
+@@ -2981,7 +2981,7 @@
+     }
+     else if (m_pcCfg->getDecodingRefreshType() == 2)
+     {
+-      return NAL_UNIT_CODED_SLICE_IDR_W_RADL;
++      return NAL_UNIT_CODED_SLICE_IDR_N_LP;
+     }
+   }
+   if(m_pocCRA>0)
+--- a/source/Lib/TLibEncoder/TEncSearch.cpp
++++ b/source/Lib/TLibEncoder/TEncSearch.cpp
+@@ -39,6 +39,7 @@
+ #include "TLibCommon/TComRom.h"
+ #include "TLibCommon/TComMotionInfo.h"
+ #include "TEncSearch.h"
++#include "CameraPolicy.h"
+ #include "TLibCommon/TComTU.h"
+ #include "TLibCommon/Debug.h"
+ #include <math.h>
+@@ -1445,7 +1446,7 @@
+   const UInt    uiTrDepth     = rTu.GetTransformDepthRel();
+   const UInt    uiLog2TrSize  = rTu.GetLog2LumaTrSize();
+         Bool    bCheckFull    = ( uiLog2TrSize  <= pcCU->getSlice()->getSPS()->getQuadtreeTULog2MaxSize() );
+-        Bool    bCheckSplit   = ( uiLog2TrSize  >  pcCU->getQuadtreeTULog2MinSizeInCU(uiAbsPartIdx) );
++        Bool    bCheckSplit   = false; // No optional intra RQT; NxN still uses four TU4.
+ 
+         Pel     resiLumaSplit [NUMBER_OF_STORED_RESIDUAL_TYPES][MAX_CU_SIZE * MAX_CU_SIZE];
+         Pel     resiLumaSingle[NUMBER_OF_STORED_RESIDUAL_TYPES][MAX_CU_SIZE * MAX_CU_SIZE];
+@@ -2619,6 +2620,7 @@
+ 
+         //----- check chroma modes -----
+         pcCU->getAllowedChromaDir( uiPartOffset, uiModeList );
++        uiModeList[0] = DM_CHROMA_IDX; uiMinMode=0; uiMaxMode=1; // Observed chroma policy
+ 
+ #if ENVIRONMENT_VARIABLE_DEBUG_AND_TEST
+         if (DebugOptionList::ForceChromaMode.isSet())
+@@ -4765,7 +4767,9 @@
+     bCheckFull =  ( uiLog2TrSize <= pcCU->getSlice()->getSPS()->getQuadtreeTULog2MaxSize() );
+   }
+ 
+-  const Bool bCheckSplit  = ( uiLog2TrSize >  pcCU->getQuadtreeTULog2MinSizeInCU(uiAbsPartIdx) );
++  bCheckFull = bCheckFull && ((1u<<uiLog2TrSize) <= CameraPolicy::maxInterTU());
++  const Bool bCheckSplit = ((1u<<uiLog2TrSize) > CameraPolicy::minInterTU()) &&
++                          (uiLog2TrSize > pcCU->getQuadtreeTULog2MinSizeInCU(uiAbsPartIdx));
+ 
+   assert( bCheckFull || bCheckSplit );
+ 
+--- a/source/Lib/TLibEncoder/TEncTop.cpp
++++ b/source/Lib/TLibEncoder/TEncTop.cpp
+@@ -701,6 +701,9 @@
+     pcVUI->setFrameFieldInfoPresentFlag(getFrameFieldInfoPresentFlag());
+     pcVUI->setFieldSeqFlag(false);
+     pcVUI->setHrdParametersPresentFlag(false);
++    pcVUI->getTimingInfo()->setTimingInfoPresentFlag(true);
++    pcVUI->getTimingInfo()->setNumUnitsInTick(1);
++    pcVUI->getTimingInfo()->setTimeScale(getFrameRate());
+     pcVUI->getTimingInfo()->setPocProportionalToTimingFlag(getPocProportionalToTimingFlag());
+     pcVUI->getTimingInfo()->setNumTicksPocDiffOneMinus1   (getNumTicksPocDiffOneMinus1()   );
+     pcVUI->setBitstreamRestrictionFlag(getBitstreamRestrictionFlag());
+@@ -944,6 +947,9 @@
+     pps.setMaxCuDQPDepth( 0 );
+   }
+ 
++  pps.setUseDQP(true);
++  pps.setMaxCuDQPDepth(getMaxCuDQPDepth());
++
+   if ( m_diffCuChromaQpOffsetDepth >= 0 )
+   {
+     pps.getPpsRangeExtension().setDiffCuChromaQpOffsetDepth(m_diffCuChromaQpOffsetDepth);
+@@ -1031,7 +1037,7 @@
+   pps.setDeblockingFilterControlPresentFlag(deblockingFilterControlPresentFlag);
+ 
+   pps.setLog2ParallelMergeLevelMinus2   (m_log2ParallelMergeLevelMinus2 );
+-  pps.setCabacInitPresentFlag(CABAC_INIT_PRESENT_FLAG);
++  pps.setCabacInitPresentFlag(false);
+   pps.setLoopFilterAcrossSlicesEnabledFlag( m_bLFCrossSliceBoundaryFlag );
+ 
+ 

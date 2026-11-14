@@ -1,0 +1,292 @@
+{
+  "passed": true,
+  "p_pictures": 19,
+  "visible_region": "x=0..1919, y=1072..1079",
+  "before": {
+    "intra_cus": 4560,
+    "inter_cus": 0,
+    "intra_luma_columns": 36480,
+    "inter_luma_columns": 0,
+    "inter_visible_area_percent": 0.0
+  },
+  "after": {
+    "intra_cus": 17,
+    "inter_cus": 4543,
+    "intra_luma_columns": 136,
+    "inter_luma_columns": 36344,
+    "inter_visible_area_percent": 99.62719298245614
+  },
+  "per_picture": {
+    "before": [
+      {
+        "poc": 1,
+        "intra_cus": 240,
+        "inter_cus": 0,
+        "intra_luma_columns": 1920,
+        "inter_luma_columns": 0
+      },
+      {
+        "poc": 2,
+        "intra_cus": 240,
+        "inter_cus": 0,
+        "intra_luma_columns": 1920,
+        "inter_luma_columns": 0
+      },
+      {
+        "poc": 3,
+        "intra_cus": 240,
+        "inter_cus": 0,
+        "intra_luma_columns": 1920,
+        "inter_luma_columns": 0
+      },
+      {
+        "poc": 4,
+        "intra_cus": 240,
+        "inter_cus": 0,
+        "intra_luma_columns": 1920,
+        "inter_luma_columns": 0
+      },
+      {
+        "poc": 5,
+        "intra_cus": 240,
+        "inter_cus": 0,
+        "intra_luma_columns": 1920,
+        "inter_luma_columns": 0
+      },
+      {
+        "poc": 6,
+        "intra_cus": 240,
+        "inter_cus": 0,
+        "intra_luma_columns": 1920,
+        "inter_luma_columns": 0
+      },
+      {
+        "poc": 7,
+        "intra_cus": 240,
+        "inter_cus": 0,
+        "intra_luma_columns": 1920,
+        "inter_luma_columns": 0
+      },
+      {
+        "poc": 8,
+        "intra_cus": 240,
+        "inter_cus": 0,
+        "intra_luma_columns": 1920,
+        "inter_luma_columns": 0
+      },
+      {
+        "poc": 9,
+        "intra_cus": 240,
+        "inter_cus": 0,
+        "intra_luma_columns": 1920,
+        "inter_luma_columns": 0
+      },
+      {
+        "poc": 10,
+        "intra_cus": 240,
+        "inter_cus": 0,
+        "intra_luma_columns": 1920,
+        "inter_luma_columns": 0
+      },
+      {
+        "poc": 11,
+        "intra_cus": 240,
+        "inter_cus": 0,
+        "intra_luma_columns": 1920,
+        "inter_luma_columns": 0
+      },
+      {
+        "poc": 12,
+        "intra_cus": 240,
+        "inter_cus": 0,
+        "intra_luma_columns": 1920,
+        "inter_luma_columns": 0
+      },
+      {
+        "poc": 13,
+        "intra_cus": 240,
+        "inter_cus": 0,
+        "intra_luma_columns": 1920,
+        "inter_luma_columns": 0
+      },
+      {
+        "poc": 14,
+        "intra_cus": 240,
+        "inter_cus": 0,
+        "intra_luma_columns": 1920,
+        "inter_luma_columns": 0
+      },
+      {
+        "poc": 15,
+        "intra_cus": 240,
+        "inter_cus": 0,
+        "intra_luma_columns": 1920,
+        "inter_luma_columns": 0
+      },
+      {
+        "poc": 16,
+        "intra_cus": 240,
+        "inter_cus": 0,
+        "intra_luma_columns": 1920,
+        "inter_luma_columns": 0
+      },
+      {
+        "poc": 17,
+        "intra_cus": 240,
+        "inter_cus": 0,
+        "intra_luma_columns": 1920,
+        "inter_luma_columns": 0
+      },
+      {
+        "poc": 18,
+        "intra_cus": 240,
+        "inter_cus": 0,
+        "intra_luma_columns": 1920,
+        "inter_luma_columns": 0
+      },
+      {
+        "poc": 19,
+        "intra_cus": 240,
+        "inter_cus": 0,
+        "intra_luma_columns": 1920,
+        "inter_luma_columns": 0
+      }
+    ],
+    "after": [
+      {
+        "poc": 1,
+        "intra_cus": 0,
+        "inter_cus": 240,
+        "intra_luma_columns": 0,
+        "inter_luma_columns": 1920
+      },
+      {
+        "poc": 2,
+        "intra_cus": 1,
+        "inter_cus": 239,
+        "intra_luma_columns": 8,
+        "inter_luma_columns": 1912
+      },
+      {
+        "poc": 3,
+        "intra_cus": 0,
+        "inter_cus": 240,
+        "intra_luma_columns": 0,
+        "inter_luma_columns": 1920
+      },
+      {
+        "poc": 4,
+        "intra_cus": 1,
+        "inter_cus": 239,
+        "intra_luma_columns": 8,
+        "inter_luma_columns": 1912
+      },
+      {
+        "poc": 5,
+        "intra_cus": 2,
+        "inter_cus": 238,
+        "intra_luma_columns": 16,
+        "inter_luma_columns": 1904
+      },
+      {
+        "poc": 6,
+        "intra_cus": 1,
+        "inter_cus": 239,
+        "intra_luma_columns": 8,
+        "inter_luma_columns": 1912
+      },
+      {
+        "poc": 7,
+        "intra_cus": 0,
+        "inter_cus": 240,
+        "intra_luma_columns": 0,
+        "inter_luma_columns": 1920
+      },
+      {
+        "poc": 8,
+        "intra_cus": 0,
+        "inter_cus": 240,
+        "intra_luma_columns": 0,
+        "inter_luma_columns": 1920
+      },
+      {
+        "poc": 9,
+        "intra_cus": 1,
+        "inter_cus": 239,
+        "intra_luma_columns": 8,
+        "inter_luma_columns": 1912
+      },
+      {
+        "poc": 10,
+        "intra_cus": 2,
+        "inter_cus": 238,
+        "intra_luma_columns": 16,
+        "inter_luma_columns": 1904
+      },
+      {
+        "poc": 11,
+        "intra_cus": 1,
+        "inter_cus": 239,
+        "intra_luma_columns": 8,
+        "inter_luma_columns": 1912
+      },
+      {
+        "poc": 12,
+        "intra_cus": 2,
+        "inter_cus": 238,
+        "intra_luma_columns": 16,
+        "inter_luma_columns": 1904
+      },
+      {
+        "poc": 13,
+        "intra_cus": 1,
+        "inter_cus": 239,
+        "intra_luma_columns": 8,
+        "inter_luma_columns": 1912
+      },
+      {
+        "poc": 14,
+        "intra_cus": 2,
+        "inter_cus": 238,
+        "intra_luma_columns": 16,
+        "inter_luma_columns": 1904
+      },
+      {
+        "poc": 15,
+        "intra_cus": 1,
+        "inter_cus": 239,
+        "intra_luma_columns": 8,
+        "inter_luma_columns": 1912
+      },
+      {
+        "poc": 16,
+        "intra_cus": 1,
+        "inter_cus": 239,
+        "intra_luma_columns": 8,
+        "inter_luma_columns": 1912
+      },
+      {
+        "poc": 17,
+        "intra_cus": 1,
+        "inter_cus": 239,
+        "intra_luma_columns": 8,
+        "inter_luma_columns": 1912
+      },
+      {
+        "poc": 18,
+        "intra_cus": 0,
+        "inter_cus": 240,
+        "intra_luma_columns": 0,
+        "inter_luma_columns": 1920
+      },
+      {
+        "poc": 19,
+        "intra_cus": 0,
+        "inter_cus": 240,
+        "intra_luma_columns": 0,
+        "inter_luma_columns": 1920
+      }
+    ]
+  },
+  "policy": "Enable CU8/CU16 inter; preserve native coded/display height 1080 and allow boundary CU8 RDO; all modes compete by RD cost."
+}

@@ -1,0 +1,41 @@
+Metric,Configured_or_Allowed,Observed,Verification
+coded_width,1920,['1920'],Passed
+coded_height,1080,['1080'],Passed
+crop_left,0,['0'],Passed
+crop_right,0,['0'],Passed
+crop_top,0,['0'],Passed
+crop_bottom,0,['0'],Passed
+cabac_init_present,0,['0'],Passed
+bitdepth,8,['8'],Passed
+ctu_size,32,['32'],Passed
+min_cu,8,['8'],Passed
+max_cu,32,['32'],Passed
+min_tu,4,['4'],Passed
+max_tu,16,['16'],Passed
+syntax_intra_transform_depth,1,['1'],Passed
+syntax_inter_transform_depth,2,['2'],Passed
+amp,0,['0'],Passed
+tmvp_sps,1,['1'],Passed
+ts_allowed,0,['0'],Passed
+sao,1,['1'],Passed
+strong_intra_smoothing,0,['0'],Passed
+pcm,0,['0'],Passed
+tiles,0,['0'],Passed
+wpp,0,['0'],Passed
+deblocking_control_present,0,['0'],Passed
+deblocking_disabled,0,['0'],Passed
+sign_hiding,1,['1'],Passed
+weighted_pred_p,0,['0'],Passed
+weighted_pred_b,0,['0'],Passed
+dqp_enabled,1,['1'],Passed
+qg_size,16,['16'],Passed
+max_merge_candidates,5,['5'],Passed
+slice_qp,27,['27'],Passed
+intra_cu_size,Pocket4 observed subset,"{""8"": 18028, ""16"": 5647}",Passed
+inter_cu_size,Pocket4 observed subset,"{""8"": 109680, ""16"": 124426}",Passed
+intra_pu_width,Pocket4 observed subset,"{""8"": 18028, ""16"": 5647}",Passed
+luma_tu_size,Pocket4 observed subset,"{""4"": 15184, ""8"": 85148, ""16"": 19671}",Passed
+rqt_depth,Pocket4 observed subset,"{""0"": 71003, ""1"": 49000}",Passed
+pu_partition,Pocket4 observed subset,"{""0"": 252586, ""1"": 4206, ""2"": 6184}",Passed
+intra_chroma_mode,Pocket4 observed subset,"{""36"": 23675}",Passed
+cu_qp,Pocket4 observed subset,"{""27"": 257781}",Passed
